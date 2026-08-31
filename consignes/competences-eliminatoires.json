@@ -1,0 +1,34 @@
+[
+  {
+    "competence": "C3.1. Planifier l’exécution du projet en organisant le cadre méthodologique du projet, la répartition et l'ordonnancement des activités, le planning prévisionnel de réalisation et les ressources nécessaires à son exécution afin de coordonner le rôle des différents acteurs.",
+    "eliminatoire": true
+  },
+  {
+    "competence": "C3.2.1 Piloter l’avancement du projet en définissant les outils de suivi adaptés, en assurant un suivi régulier de l'avancée, en communiquant sur les indicateurs clés afin de garantir la performance du projet dans le respect des délais, de la qualité et des coûts.",
+
+    "eliminatoire": true
+  },
+  {
+    "competence": "C3.2.2 Procéder aux arbitrages nécessaires à partir de l’analyse des écarts et des dérives constatés, en utilisant des outils d’aide à la décision (logigramme) afin de garantir le bon déroulement du projet.",
+    "eliminatoire": false
+  },
+  {
+    "competence": "C3.3.1 Piloter l’équipe tout au long du projet en affectant les missions à réaliser, en prenant en compte les personnes en situation de handicap, en intégrant les spécificités d’un contexte multiculturel, international, en utilisant les différentes techniques de communication et managériales, en veillant au respect du plan établi pour favoriser le bon fonctionnement de l'équipe.",
+    "eliminatoire": false
+  },
+  {
+    "competence": "C3.3.2 Évaluer les besoins en compétences de l’équipe, en transmettant les besoins en recrutement au service RH, en identifiant les besoins de montée en compétences pour les collaborateurs dans le cadre d’un plan de développement des compétences, et en orientant les membres de l’équipe vers des formations adaptées, afin de renforcer l’équipe.",
+
+    "eliminatoire": false
+  },
+  {
+    "competence": "C3.4.1 Effectuer des comptes rendus d'activités sur l'état d'avancement auprès du client en présentant les évolutions et améliorations du projet, en planifiant des points de validation, en établissant des indicateurs de satisfaction afin de favoriser l’adhésion et permettre la validation des avancées de production.",
+
+    "eliminatoire": false
+  },
+  {
+    "competence": "C3.4.2 Réaliser une démonstration des fonctionnalités en s’appuyant sur la dernière version logicielle développée, en employant un vocabulaire adapté à son audience afin d’obtenir la validation du commanditaire avant livraison",
+
+    "eliminatoire": true
+  }
+]
