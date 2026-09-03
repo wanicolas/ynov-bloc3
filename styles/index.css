@@ -33,45 +33,30 @@
 	font-display: swap;
 }
 
-/* 2. Variables CSS & Tokens racine */
-:root {
-	--slidev-color-primary: #000000;
-	--slidev-color-surface: #ffffff;
-	--slidev-color-muted: #666666;
-	--slidev-color-subtle: #888888;
-	--slidev-color-border: #e5e5e5;
-	--slidev-color-border-strong: #000000;
-	--slidev-font-sans:
-		"Hanken Grotesk", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-		sans-serif;
-	--slidev-font-mono: "JetBrains Mono", monospace;
-}
-
-/* 3. Base & Canvas */
+/* 2. Base & Canvas */
 html,
 body,
 #app {
-	font-family: var(--slidev-font-sans);
-	color: var(--slidev-color-primary);
-	background-color: var(--slidev-color-surface);
+	font-family:
+		"Hanken Grotesk",
+		-apple-system,
+		BlinkMacSystemFont,
+		"Segoe UI",
+		Roboto,
+		sans-serif;
+	background-color: #ffffff;
+	color: #000000;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
 
 .slidev-layout {
-	font-family: var(--slidev-font-sans);
-	color: var(--slidev-color-primary);
-	background-color: var(--slidev-color-surface);
 	padding: 3rem 3.5rem 4rem 3.5rem;
 	box-sizing: border-box;
 }
 
-/* 4. Typographie centralisée à la racine */
-
-/* Titre standard de slide */
+/* 3. Titre Markdown standard */
 .slidev-layout h1 {
-	font-family: var(--slidev-font-sans);
-	color: var(--slidev-color-primary);
 	font-size: 2.35rem;
 	font-weight: 500;
 	letter-spacing: -0.02em;
@@ -80,62 +65,34 @@ body,
 	margin-bottom: 2rem;
 }
 
-/* Titres "Hero" pour la couverture, les intercalaires et la slide de fin */
+/* Titre Hero pour les layouts spécifiques */
 .slidev-layout.cover h1,
 .slidev-layout.section h1,
 .slidev-layout.end h1 {
 	font-size: 3.25rem;
-	font-weight: 500;
-	line-height: 1.15;
-	letter-spacing: -0.025em;
 	margin-bottom: 1.75rem;
-	color: var(--slidev-color-primary);
 }
 
 .slidev-layout.agenda h1 {
 	font-size: 2.6rem;
-	font-weight: 500;
-	letter-spacing: -0.02em;
 	text-align: center;
-	margin-top: 0;
 	margin-bottom: 3.5rem;
 }
 
-/* Sous-titres et paragraphes des slides Hero */
 .slidev-layout.cover p,
 .slidev-layout.section p,
 .slidev-layout.end p {
 	font-size: 1.25rem;
-	font-weight: 400;
-	color: var(--slidev-color-muted);
+	color: #666666;
 	margin: 0;
 	line-height: 1.4;
 }
 
-/* Sous-titres h2, h3, h4 */
-.slidev-layout h2 {
-	font-size: 1.6rem;
-	font-weight: 500;
-	letter-spacing: -0.01em;
-	color: var(--slidev-color-primary);
-	margin-top: 0;
-	margin-bottom: 1rem;
-}
-
-.slidev-layout h3,
-.slidev-layout h4 {
-	font-size: 1.25rem;
-	font-weight: 500;
-	letter-spacing: -0.01em;
-	color: var(--slidev-color-primary);
-}
-
-/* 5. Listes à puces (style tiret "—" aéré et cohérent) */
+/* 4. Listes Markdown à tirets "—" */
 .slidev-layout ul {
 	list-style: none;
 	padding-left: 0;
-	margin-top: 1.25rem;
-	margin-bottom: 1.25rem;
+	margin: 1.25rem 0;
 }
 
 .slidev-layout ul > li {
@@ -143,57 +100,49 @@ body,
 	padding-left: 1.6rem;
 	margin-bottom: 0.9rem;
 	line-height: 1.5;
-	font-size: 1.05rem;
-	color: var(--slidev-color-primary);
 }
 
 .slidev-layout ul > li::before {
 	content: "—";
 	position: absolute;
 	left: 0;
-	color: var(--slidev-color-primary);
+	color: #000000;
 	font-weight: 400;
 }
 
 .slidev-layout ul ul {
-	margin-top: 0.5rem;
-	margin-bottom: 0.5rem;
+	margin: 0.5rem 0;
 }
 
 .slidev-layout ul ul > li {
 	font-size: 0.95rem;
-	color: var(--slidev-color-muted);
+	color: #666666;
 }
 
-/* 6. Tableaux (style net avec bordures noires fines de la slide 5) */
+/* 5. Tableaux Markdown (bordures noires nettes) */
 .slidev-layout table {
 	width: 100%;
 	border-collapse: collapse;
-	margin-top: 1.5rem;
-	margin-bottom: 1.5rem;
-	border: 1px solid var(--slidev-color-border-strong);
+	border: 1px solid #000000;
+	margin: 1.5rem 0;
 	font-size: 0.95rem;
 }
 
-.slidev-layout th {
-	border: 1px solid var(--slidev-color-border-strong);
+.slidev-layout th,
+.slidev-layout td {
+	border: 1px solid #000000;
 	padding: 0.85rem 1rem;
+	color: #000000;
+	background-color: #ffffff;
+}
+
+.slidev-layout th {
 	font-weight: 600;
-	color: var(--slidev-color-primary);
-	background-color: var(--slidev-color-surface);
 	text-align: left;
 }
 
-.slidev-layout td {
-	border: 1px solid var(--slidev-color-border-strong);
-	padding: 0.85rem 1rem;
-	color: var(--slidev-color-primary);
-	background-color: var(--slidev-color-surface);
-	vertical-align: middle;
-}
-
-/* 7. Code & Highlighting */
+/* 6. Code & Monospace */
 code,
 pre {
-	font-family: var(--slidev-font-mono) !important;
+	font-family: "JetBrains Mono", monospace !important;
 }
