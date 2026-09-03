@@ -29,20 +29,4 @@ declare module 'vue' {
 	}
 }
 
-declare module '@vue/runtime-core' {
-	interface ComponentCustomProperties {
-		$slidev: {
-			configs: SlidevConfig
-			nav: SlidevNav
-			[key: string]: any
-		}
-		$nav: SlidevNav
-		$frontmatter: Frontmatter & Record<string, any>
-		$page: number
-		$clicks: number
-		$clicksContext: ClicksContext
-		$renderContext: RenderContext
-	}
-}
-
 export {}

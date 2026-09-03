@@ -1,6 +1,5 @@
 <template>
 	<footer
-		v-if="!$frontmatter?.hideFooter"
 		class="text-sm text-neutral-500 px-3 border-t border-neutral-500 flex items-center bottom-0 left-0 right-0 justify-between absolute z-10"
 	>
 		<!-- Left: Presenter - School - Date -->

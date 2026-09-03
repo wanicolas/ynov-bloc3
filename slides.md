@@ -2,8 +2,6 @@
 theme: none
 title: Coordonner et piloter un projet de développement d’applications logicielles
 author: Nicolas WALTER
-school: Ynov Strasbourg
-date: 19 juin 2026
 layout: cover
 fonts:
   provider: none
@@ -84,12 +82,3 @@ layout: default
 ---
 
 # Captures de l’interface “admin”
-
-<div class="grid grid-cols-2 gap-6 mt-4">
-  <div class="border border-border p-4 rounded flex items-center justify-center h-72 text-muted text-sm">
-    <span>Capture 1 : Dashboard & métriques</span>
-  </div>
-  <div class="border border-border p-4 rounded flex items-center justify-center h-72 text-muted text-sm">
-    <span>Capture 2 : Édition & publication</span>
-  </div>
-</div>

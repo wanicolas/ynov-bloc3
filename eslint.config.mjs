@@ -12,7 +12,7 @@ export default antfu({
 		'dist/**',
 		'node_modules/**',
 		'slides.md',
-		'pages/*.md',
+		'pages/**/*.md',
 		'consignes/**',
 		'pnpm-workspace.yaml',
 	],

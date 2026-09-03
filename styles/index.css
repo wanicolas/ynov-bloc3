@@ -37,6 +37,7 @@
 html,
 body,
 #app {
+	@apply bg-white text-black;
 	font-family:
 		"Hanken Grotesk",
 		-apple-system,
@@ -44,8 +45,6 @@ body,
 		"Segoe UI",
 		Roboto,
 		sans-serif;
-	background-color: #ffffff;
-	color: #000000;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
@@ -57,88 +56,126 @@ body,
 
 /* 3. Titre Markdown standard */
 .slidev-layout h1 {
-	font-size: 2.35rem;
-	font-weight: 500;
-	letter-spacing: -0.02em;
-	line-height: 1.15;
-	margin-top: 0;
-	margin-bottom: 2rem;
+	@apply text-4xl font-medium tracking-tight mt-0 mb-8 leading-tight;
+}
+
+.slidev-layout h2 {
+	@apply text-2xl font-medium tracking-tight mt-6 mb-4 leading-snug;
+}
+
+.slidev-layout h3 {
+	@apply text-xl font-medium mt-5 mb-3;
 }
 
 /* Titre Hero pour les layouts spécifiques */
 .slidev-layout.cover h1,
 .slidev-layout.section h1,
 .slidev-layout.end h1 {
-	font-size: 3.25rem;
-	margin-bottom: 1.75rem;
+	@apply text-5xl mb-7;
+}
+
+.slidev-layout.section h1:last-child {
+	@apply mb-0;
 }
 
 .slidev-layout.agenda h1 {
-	font-size: 2.6rem;
-	text-align: center;
-	margin-bottom: 3.5rem;
+	@apply text-4xl text-center mb-14;
 }
 
 .slidev-layout.cover p,
 .slidev-layout.section p,
 .slidev-layout.end p {
-	font-size: 1.25rem;
-	color: #666666;
-	margin: 0;
-	line-height: 1.4;
+	@apply text-xl text-neutral-500 m-0 leading-snug;
 }
 
-/* 4. Listes Markdown à tirets "—" */
+/* 4. Listes Markdown */
+.slidev-layout ul,
+.slidev-layout ol {
+	@apply pl-0 my-5;
+}
+
+/* Listes non-ordonnées à tirets "—" */
 .slidev-layout ul {
 	list-style: none;
-	padding-left: 0;
-	margin: 1.25rem 0;
 }
 
 .slidev-layout ul > li {
-	position: relative;
-	padding-left: 1.6rem;
-	margin-bottom: 0.9rem;
-	line-height: 1.5;
+	@apply relative pl-6 mb-3.5 leading-relaxed;
 }
 
 .slidev-layout ul > li::before {
 	content: "—";
-	position: absolute;
-	left: 0;
-	color: #000000;
-	font-weight: 400;
+	@apply absolute left-0 text-neutral-700;
 }
 
 .slidev-layout ul ul {
-	margin: 0.5rem 0;
+	@apply my-2;
 }
 
 .slidev-layout ul ul > li {
-	font-size: 0.95rem;
-	color: #666666;
+	@apply text-sm text-neutral-500;
 }
 
-/* 5. Tableaux Markdown (bordures noires nettes) */
+/* Listes ordonnées (numérotées) */
+.slidev-layout ol {
+	list-style: none;
+	counter-reset: slidev-counter;
+}
+
+.slidev-layout ol > li {
+	counter-increment: slidev-counter;
+	@apply relative pl-8 mb-3.5 leading-relaxed;
+}
+
+.slidev-layout ol > li::before {
+	content: counter(slidev-counter, decimal-leading-zero) ".";
+	@apply absolute left-0 text-neutral-500 font-mono font-medium text-sm leading-6;
+}
+
+.slidev-layout ol ol {
+	counter-reset: slidev-subcounter;
+	@apply my-2;
+}
+
+.slidev-layout ol ol > li {
+	counter-increment: slidev-subcounter;
+	@apply pl-7 text-sm text-neutral-500;
+}
+
+.slidev-layout ol ol > li::before {
+	content: counter(slidev-subcounter) ".";
+}
+
+/* 5. Tableaux Markdown */
 .slidev-layout table {
-	width: 100%;
-	border-collapse: collapse;
-	border: 1px solid #000000;
-	margin: 1.5rem 0;
-	font-size: 0.95rem;
+	@apply w-full border-collapse my-6 text-sm border border-neutral-200 rounded-lg overflow-hidden;
+	border-spacing: 0;
 }
 
 .slidev-layout th,
 .slidev-layout td {
-	border: 1px solid #000000;
-	padding: 0.85rem 1rem;
-	color: #000000;
-	background-color: #ffffff;
+	@apply py-3 px-4 text-left border-b border-neutral-200 border-r border-neutral-100;
+}
+
+.slidev-layout th:last-child,
+.slidev-layout td:last-child {
+	border-right: none;
+}
+
+.slidev-layout tr:last-child td {
+	border-bottom: none;
 }
 
 .slidev-layout th {
-	font-weight: 600;
-	text-align: left;
+	@apply font-semibold text-neutral-900 bg-neutral-50 border-b-2 border-neutral-200;
+}
+
+.slidev-layout td {
+	@apply text-neutral-800 bg-white;
+}
+
+.slidev-layout tbody tr:nth-child(even) td {
+	@apply bg-neutral-50/60;
 }
 
 /* 6. Code & Monospace */
