@@ -2,6 +2,9 @@
 theme: none
 title: Coordonner et piloter un projet de développement d’applications logicielles
 author: Nicolas WALTER
+school: Ynov Strasbourg
+date: 19 juin 2026
+layout: cover
 fonts:
   provider: none
   sans: "Hanken Grotesk"
@@ -10,8 +13,6 @@ lineNumbers: false
 drawings:
   persist: false
 transition: fade
-
-# HTML tag attributes
 htmlAttrs:
   dir: ltr
   lang: fr
@@ -23,7 +24,6 @@ Expert en Développement Logiciel (RNCP 39583)
 
 ---
 layout: agenda
-title: Au programme
 ---
 
 # Au programme
@@ -35,6 +35,14 @@ title: Au programme
 ]" />
 
 ---
+layout: section
+---
+
+# Contexte & Besoin
+
+---
+layout: default
+---
 
 # Contexte et cartographie des parties prenantes
 
@@ -44,6 +52,8 @@ title: Au programme
 - **Utilisateurs :** Étudiants, intervenants et jury
 - **Contraintes majeures :** Budget très strict (25€) et temps limité (9 séances de 7h)
 
+---
+layout: default
 ---
 
 # Étude comparative et choix technique
@@ -56,19 +66,30 @@ title: Au programme
 | **Risque projet**          | Élevé (Dépassement délais/coûts) | Faible (Maîtrisé)        |
 
 ---
+layout: end
+---
 
 # Merci de votre<br>attention !
 
 Avez-vous des questions ?
 
 ---
+layout: section
+---
 
 # Annexes
 
 ---
+layout: default
+---
 
 # Captures de l’interface “admin”
 
-<div class="flex items-center justify-center h-72 text-gray-400 border border-dashed border-gray-300 rounded text-sm">
-  <span>Emplacement des captures d'écran interface admin</span>
+<div class="grid grid-cols-2 gap-6 mt-4">
+  <div class="border border-border p-4 rounded flex items-center justify-center h-72 text-muted text-sm">
+    <span>Capture 1 : Dashboard & métriques</span>
+  </div>
+  <div class="border border-border p-4 rounded flex items-center justify-center h-72 text-muted text-sm">
+    <span>Capture 2 : Édition & publication</span>
+  </div>
 </div>

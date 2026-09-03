@@ -46,10 +46,10 @@ const gridClass = computed(() => {
 			:key="index"
 			class="flex flex-col items-center justify-start"
 		>
-			<div class="mb-4 text-6xl text-[#000000] font-medium tracking-tight">
+			<div class="mb-4 text-6xl text-primary font-medium tracking-tight">
 				{{ item.number }}
 			</div>
-			<div class="max-w-xs text-xl text-[#111111] font-normal leading-snug">
+			<div class="max-w-xs text-xl text-primary font-normal leading-snug">
 				{{ item.title }}
 			</div>
 		</div>
