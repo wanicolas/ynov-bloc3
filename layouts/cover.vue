@@ -4,7 +4,7 @@ withDefaults(
 		logo?: string
 	}>(),
 	{
-		logo: '/YNOV_STRASBOURG_NOIR.svg',
+		logo: "/YNOV_STRASBOURG_NOIR.svg",
 	},
 )
 </script>

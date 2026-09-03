@@ -4,7 +4,7 @@ import type {
 	NavOperations,
 	RenderContext,
 	SlidevConfig,
-} from '@slidev/types'
+} from "@slidev/types"
 
 export type SlidevNav = NavOperations & {
 	currentLayout: string
@@ -13,7 +13,7 @@ export type SlidevNav = NavOperations & {
 	isPresenter: boolean
 }
 
-declare module 'vue' {
+declare module "vue" {
 	interface ComponentCustomProperties {
 		$slidev: {
 			configs: SlidevConfig

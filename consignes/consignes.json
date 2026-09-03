@@ -7,6 +7,7 @@
 			"competences": [
 				{
 					"id_competence": "C3.1",
+					"eliminatoire": true,
 					"description": "Planifier l'exécution du projet en organisant le cadre méthodologique du projet, la répartition et l'ordonnancement des activités, le planning prévisionnel de réalisation et les ressources nécessaires à son exécution afin de coordonner le rôle des différents acteurs.",
 					"taches_associees": [
 						"Élaboration de la feuille de route et du calendrier de réalisation (retroplanning)",
@@ -38,6 +39,7 @@
 			"competences": [
 				{
 					"id_competence": "C3.2.1",
+					"eliminatoire": true,
 					"description": "Piloter l'avancement du projet en définissant les outils de suivi adaptés, en assurant un suivi regular de l'avancée, en communiquant sur les indicateurs clés afin de garantir la performance du projet dans le respect des délais, de la qualité et des coûts.",
 					"taches_associees": [
 						"Mise en place des instances de suivi",
@@ -147,6 +149,7 @@
 				},
 				{
 					"id_competence": "C3.4.2",
+					"eliminatoire": true,
 					"description": "Réaliser une démonstration des fonctionnalités en s'appuyant sur la dernière version logicielle développée, en employant un vocabulaire adapté à son audience afin d'obtenir la validation du commanditaire avant livraison",
 					"taches_associees": [
 						"Démonstration des fonctionnalités développées",

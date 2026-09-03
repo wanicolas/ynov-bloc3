@@ -28,3 +28,14 @@ le jury) pour présenter la gestion du projet et réaliser une démonstration du
   Évaluateur : Jury d’évaluation composé de 2 membres professionnels externes dans le domaine visé
 
 **Modalités de validation :** pour chaque compétence, le jury d’évaluation indiquera l’acquisition ou la non-acquisition de la compétence et motivera sa décision par un commentaire en cas de non-acquisition.
+
+**Compétences éliminatoires :**
+- C.3.1. Planifier l’exécution du projet en organisant le cadre méthodologique du projet, la répartition et
+l'ordonnancement des activités, le planning prévisionnel de réalisation et les ressources nécessaires à son
+Direction Certification, Titres et Qualité v. 1.01 du 15/09/2025
+exécution afin de clarifier les responsabilités des différents acteurs et assurer une bonne coordination.
+- C.3.2.1 Piloter l’avancement du projet en définissant les outils de suivi adaptés, en assurant un suivi régulier
+de l'avancée, en communiquant sur les indicateurs clés afin de garantir la performance du projet dans le
+respect des délais, de la qualité et des coûts.
+- C.3.4.2 Réaliser une démonstration des fonctionnalités à partir de la dernière version logicielle développée
+afin d’obtenir la validation du commanditaire avant livraison
