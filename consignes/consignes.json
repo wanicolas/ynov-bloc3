@@ -1,168 +1,168 @@
 {
-  "titre": "BLOC 3: COORDONNER ET PILOTER UN PROJET DE DEVELOPPEMENT D'APPLICATIONS LOGICIELLES",
-  "referentiel_activites": [
-    {
-      "id_activite": "A3.1",
-      "nom_activite": "Planification du projet de développement logiciel",
-      "competences": [
-        {
-          "id_competence": "C3.1",
-          "description": "Planifier l'exécution du projet en organisant le cadre méthodologique du projet, la répartition et l'ordonnancement des activités, le planning prévisionnel de réalisation et les ressources nécessaires à son exécution afin de coordonner le rôle des différents acteurs.",
-          "taches_associees": [
-            "Élaboration de la feuille de route et du calendrier de réalisation (retroplanning)",
-            "Choix de la méthodologie de conduite de projet",
-            "Identification des ressources: humaines, financières et matérielles",
-            "Définition des rôles et responsabilités des acteurs du projet",
-            "Listing et affectation des tâches"
-          ],
-          "modalites_evaluation": [
-            "Une présentation de la méthodologie choisie",
-            "Le planning détaillé du projet",
-            "Les ressources nécessaires"
-          ],
-          "criteres_evaluation": [
-            "Le choix de la méthodologie de gestion de projet est justifié avec les bénéfices attendus (ex: Agile, Scrum, Kanban, en V).",
-            "L'outil utilisé pour la planification est argumenté en faisant apparaitre les bénéfices attendus (ex: diagramme de Gantt, PERT, rétroplanning).",
-            "L'outil de planification est compatible avec la méthodologie projet choisie.",
-            "Le planning du projet est découpé en phases, en tâches ou lots.",
-            "Il permet de visualiser les phases d'étude, de mesure, de conception, de réalisation, de restitution.",
-            "Les tâches sont assignées aux différents membres de l'équipe selon leurs compétences (matrice RACI, RASCI...) et tiennent compte des personnes en situation d'handicap.",
-            "Les points de vigilance sont soulignés"
-          ]
-        }
-      ]
-    },
-    {
-      "id_activite": "A3.2",
-      "nom_activite": "Pilotage du projet de développement logiciel",
-      "competences": [
-        {
-          "id_competence": "C3.2.1",
-          "description": "Piloter l'avancement du projet en définissant les outils de suivi adaptés, en assurant un suivi regular de l'avancée, en communiquant sur les indicateurs clés afin de garantir la performance du projet dans le respect des délais, de la qualité et des coûts.",
-          "taches_associees": [
-            "Mise en place des instances de suivi",
-            "Définition d'outils de suivi",
-            "Identification des indicateurs de suivi de projet",
-            "Suivi du budget",
-            "Suivi de la production de l'équipe projet"
-          ],
-          "modalites_evaluation": ["L'outil de suivi de projet"],
-          "criteres_evaluation": [
-            "L'outil de suivi utilisé est en adéquation avec le projet et la méthodologie choisie.",
-            "Les indicateurs sélectionnés sont mesurables et quantifiables. Ils permettent de suivre les délais, les coûts et l'avancement du projet.",
-            "Les tableaux de bord intègrent : l'avancement du projet, le suivi des coûts, le suivi des délais, le suivi des risques, des Ressources Humaines, etc."
-          ]
-        },
-        {
-          "id_competence": "C3.2.2",
-          "description": "Procéder aux arbitrages nécessaires à partir de l'analyse des écarts et des dérives constatés, en utilisant des outils d'aide à la décision (logigramme) afin de garantir le bon déroulement du projet.",
-          "taches_associees": [
-            "Suivi des dérives et ajustement des écarts",
-            "Réalisation des arbitrages nécessaires au bon déroulement du projet"
-          ],
-          "modalites_evaluation": [
-            "La présentation d'un cas d'arbitrage rencontré au cours du projet"
-          ],
-          "criteres_evaluation": [
-            "La problématique qui nécessite un arbitrage est exposée avec ses conséquences.",
-            "Les différentes options possibles pour y remédier sont détaillées.",
-            "La décision d'arbitrage est argumentée et permet de résoudre la problématique."
-          ]
-        }
-      ]
-    },
-    {
-      "id_activite": "A3.3",
-      "nom_activite": "Management d'une équipe",
-      "competences": [
-        {
-          "id_competence": "C3.3.1",
-          "description": "Piloter l'équipe tout au long du projet en affectant les missions à réaliser, en prenant en compte les personnes en situation de handicap, en intégrant les spécificités d'un contexte multiculturel, international, en utilisant les différentes techniques de communication et managériales, en veillant au respect du plan établi pour favoriser le bon fonctionnement de l'équipe.",
-          "taches_associees": [
-            "Maintien de la motivation et de l'implication des équipes",
-            "Prise en compte des éventuelles situations de handicap",
-            "Gestion des conflits et des personnalités (écoute, empathie, directivité, ...)",
-            "Conduite de réunions, groupes d'échanges ou entretiens avec l'équipe"
-          ],
-          "modalites_evaluation": [
-            "La présentation de l'affectation des missions réalisée au cours du projet.",
-            "La présentation du style managérial ou des styles managériaux utilisés (directif, persuasif, participatif et délégatif)",
-            "La présentation des outils de communication utilisés avec les équipes et leurs objectifs"
-          ],
-          "criteres_evaluation": [
-            "Les spécificités des personnes en situation de handicap sont prises en compte. (ex: bonne intégration, poste de travail adapté, ...).",
-            "La charge de travail est répartie sur l'ensemble de l'équipe de manière équilibrée.",
-            "Le style managérial est identifié et décrit.",
-            "Les grands principes et techniques de gestion managériale et d'animation d'équipe sont présentés et adaptés au projet (ex: empathie, écoute, bienveillance, leadership).",
-            "Une analyse critique d'une situation ou d'une posture managériale dans la gestion du projet est présentée.",
-            "Les recommandations sont réalistes et réalisables dans leur mise en œuvre.",
-            "Les outils collaboratifs utilisés par le candidat intègrent le partage de ressources.",
-            "Les choix d'outils sont pertinents au regard de l'objectif poursuivi."
-          ]
-        },
-        {
-          "id_competence": "C3.3.2",
-          "description": "Évaluer les besoins en compétences de l'équipe, en transmettant les besoins en recrutement au service RH, en identifiant les besoins de montée en compétences pour les collaborateurs dans le cadre d'un plan de développement des compétences, et en orientant les membres de l'équipe vers des formations adaptées, afin de renforcer l'équipe.",
-          "taches_associees": [
-            "Renforcement des compétences de l'équipe",
-            "Évaluation du besoin en compétences",
-            "Élaboration d'un plan de développement des compétences"
-          ],
-          "modalites_evaluation": [
-            "La présentation de l'évaluation des besoins en compétences réalisée via l'utilisation de grille d'évaluation des compétences.",
-            "La présentation du plan de développement des compétences"
-          ],
-          "criteres_evaluation": [
-            "Les compétences à mobiliser dans le cadre du projet sont identifiées.",
-            "Une grille d'évaluation des compétences actuelles et des compétences à acquérir est commentée.",
-            "Un plan de développement des compétences adapté au projet est établi et détaillé. Il permet de monter en compétences le public visé.",
-            "Des formations sont préconisées en fonction des besoins du projet et du profil des membres de l'équipe.",
-            "Les modalités de formation sont adaptées pour prendre en considération les spécificités liées au handicap des personnes formées. (ex : aménagement matériel, temps supplémentaire...)"
-          ]
-        }
-      ]
-    },
-    {
-      "id_activite": "A3.4",
-      "nom_activite": "Suivi du projet en lien avec le client",
-      "competences": [
-        {
-          "id_competence": "C3.4.1",
-          "description": "Effectuer des comptes rendus d'activités sur l'état d'avancement auprès du client en présentant les évolutions et améliorations du projet, en planifiant des points de validation, en établissant des indicateurs de satisfaction afin de favoriser l'adhésion et permettre la validation des avancées de production.",
-          "taches_associees": [
-            "Réalisation de comptes rendus",
-            "Définition les indicateurs de conformité des fonctionnalités au regard des attendus du projet"
-          ],
-          "modalites_evaluation": [
-            "La présentation des comptes rendus sur les évolutions et améliorations du projet",
-            "La planification des points de validation réalisés",
-            "Les indicateurs de satisfaction mis en place"
-          ],
-          "criteres_evaluation": [
-            "Les comptes rendus sont rédigés de manière claire et ordonnée.",
-            "Les comptes rendus permettent de faciliter les prises de décision du client.",
-            "Les points de validation sont organisés de manière à assurer le suivi qualité du projet (adéquation entre développement et fonctionnalités attendues, délais, ...).",
-            "Les indicateurs de satisfaction sont définis et sont cohérents au regard du projet."
-          ]
-        },
-        {
-          "id_competence": "C3.4.2",
-          "description": "Réaliser une démonstration des fonctionnalités en s'appuyant sur la dernière version logicielle développée, en employant un vocabulaire adapté à son audience afin d'obtenir la validation du commanditaire avant livraison",
-          "taches_associees": [
-            "Démonstration des fonctionnalités développées",
-            "Validation avec le commanditaire des étapes du développement depuis la genèse jusqu'au déploiement en production"
-          ],
-          "modalites_evaluation": [
-            "Une démonstration des fonctionnalités du logiciel par le candidat devant le jury"
-          ],
-          "criteres_evaluation": [
-            "Le logiciel est utilisable.",
-            "La démonstration reprend les fonctionnalités attendues.",
-            "Le vocabulaire employé est adapté à une présentation client.",
-            "La démonstration permet d'aboutir à une validation du projet."
-          ]
-        }
-      ]
-    }
-  ]
+	"titre": "BLOC 3: COORDONNER ET PILOTER UN PROJET DE DEVELOPPEMENT D'APPLICATIONS LOGICIELLES",
+	"referentiel_activites": [
+		{
+			"id_activite": "A3.1",
+			"nom_activite": "Planification du projet de développement logiciel",
+			"competences": [
+				{
+					"id_competence": "C3.1",
+					"description": "Planifier l'exécution du projet en organisant le cadre méthodologique du projet, la répartition et l'ordonnancement des activités, le planning prévisionnel de réalisation et les ressources nécessaires à son exécution afin de coordonner le rôle des différents acteurs.",
+					"taches_associees": [
+						"Élaboration de la feuille de route et du calendrier de réalisation (retroplanning)",
+						"Choix de la méthodologie de conduite de projet",
+						"Identification des ressources: humaines, financières et matérielles",
+						"Définition des rôles et responsabilités des acteurs du projet",
+						"Listing et affectation des tâches"
+					],
+					"modalites_evaluation": [
+						"Une présentation de la méthodologie choisie",
+						"Le planning détaillé du projet",
+						"Les ressources nécessaires"
+					],
+					"criteres_evaluation": [
+						"Le choix de la méthodologie de gestion de projet est justifié avec les bénéfices attendus (ex: Agile, Scrum, Kanban, en V).",
+						"L'outil utilisé pour la planification est argumenté en faisant apparaitre les bénéfices attendus (ex: diagramme de Gantt, PERT, rétroplanning).",
+						"L'outil de planification est compatible avec la méthodologie projet choisie.",
+						"Le planning du projet est découpé en phases, en tâches ou lots.",
+						"Il permet de visualiser les phases d'étude, de mesure, de conception, de réalisation, de restitution.",
+						"Les tâches sont assignées aux différents membres de l'équipe selon leurs compétences (matrice RACI, RASCI...) et tiennent compte des personnes en situation d'handicap.",
+						"Les points de vigilance sont soulignés"
+					]
+				}
+			]
+		},
+		{
+			"id_activite": "A3.2",
+			"nom_activite": "Pilotage du projet de développement logiciel",
+			"competences": [
+				{
+					"id_competence": "C3.2.1",
+					"description": "Piloter l'avancement du projet en définissant les outils de suivi adaptés, en assurant un suivi regular de l'avancée, en communiquant sur les indicateurs clés afin de garantir la performance du projet dans le respect des délais, de la qualité et des coûts.",
+					"taches_associees": [
+						"Mise en place des instances de suivi",
+						"Définition d'outils de suivi",
+						"Identification des indicateurs de suivi de projet",
+						"Suivi du budget",
+						"Suivi de la production de l'équipe projet"
+					],
+					"modalites_evaluation": ["L'outil de suivi de projet"],
+					"criteres_evaluation": [
+						"L'outil de suivi utilisé est en adéquation avec le projet et la méthodologie choisie.",
+						"Les indicateurs sélectionnés sont mesurables et quantifiables. Ils permettent de suivre les délais, les coûts et l'avancement du projet.",
+						"Les tableaux de bord intègrent : l'avancement du projet, le suivi des coûts, le suivi des délais, le suivi des risques, des Ressources Humaines, etc."
+					]
+				},
+				{
+					"id_competence": "C3.2.2",
+					"description": "Procéder aux arbitrages nécessaires à partir de l'analyse des écarts et des dérives constatés, en utilisant des outils d'aide à la décision (logigramme) afin de garantir le bon déroulement du projet.",
+					"taches_associees": [
+						"Suivi des dérives et ajustement des écarts",
+						"Réalisation des arbitrages nécessaires au bon déroulement du projet"
+					],
+					"modalites_evaluation": [
+						"La présentation d'un cas d'arbitrage rencontré au cours du projet"
+					],
+					"criteres_evaluation": [
+						"La problématique qui nécessite un arbitrage est exposée avec ses conséquences.",
+						"Les différentes options possibles pour y remédier sont détaillées.",
+						"La décision d'arbitrage est argumentée et permet de résoudre la problématique."
+					]
+				}
+			]
+		},
+		{
+			"id_activite": "A3.3",
+			"nom_activite": "Management d'une équipe",
+			"competences": [
+				{
+					"id_competence": "C3.3.1",
+					"description": "Piloter l'équipe tout au long du projet en affectant les missions à réaliser, en prenant en compte les personnes en situation de handicap, en intégrant les spécificités d'un contexte multiculturel, international, en utilisant les différentes techniques de communication et managériales, en veillant au respect du plan établi pour favoriser le bon fonctionnement de l'équipe.",
+					"taches_associees": [
+						"Maintien de la motivation et de l'implication des équipes",
+						"Prise en compte des éventuelles situations de handicap",
+						"Gestion des conflits et des personnalités (écoute, empathie, directivité, ...)",
+						"Conduite de réunions, groupes d'échanges ou entretiens avec l'équipe"
+					],
+					"modalites_evaluation": [
+						"La présentation de l'affectation des missions réalisée au cours du projet.",
+						"La présentation du style managérial ou des styles managériaux utilisés (directif, persuasif, participatif et délégatif)",
+						"La présentation des outils de communication utilisés avec les équipes et leurs objectifs"
+					],
+					"criteres_evaluation": [
+						"Les spécificités des personnes en situation de handicap sont prises en compte. (ex: bonne intégration, poste de travail adapté, ...).",
+						"La charge de travail est répartie sur l'ensemble de l'équipe de manière équilibrée.",
+						"Le style managérial est identifié et décrit.",
+						"Les grands principes et techniques de gestion managériale et d'animation d'équipe sont présentés et adaptés au projet (ex: empathie, écoute, bienveillance, leadership).",
+						"Une analyse critique d'une situation ou d'une posture managériale dans la gestion du projet est présentée.",
+						"Les recommandations sont réalistes et réalisables dans leur mise en œuvre.",
+						"Les outils collaboratifs utilisés par le candidat intègrent le partage de ressources.",
+						"Les choix d'outils sont pertinents au regard de l'objectif poursuivi."
+					]
+				},
+				{
+					"id_competence": "C3.3.2",
+					"description": "Évaluer les besoins en compétences de l'équipe, en transmettant les besoins en recrutement au service RH, en identifiant les besoins de montée en compétences pour les collaborateurs dans le cadre d'un plan de développement des compétences, et en orientant les membres de l'équipe vers des formations adaptées, afin de renforcer l'équipe.",
+					"taches_associees": [
+						"Renforcement des compétences de l'équipe",
+						"Évaluation du besoin en compétences",
+						"Élaboration d'un plan de développement des compétences"
+					],
+					"modalites_evaluation": [
+						"La présentation de l'évaluation des besoins en compétences réalisée via l'utilisation de grille d'évaluation des compétences.",
+						"La présentation du plan de développement des compétences"
+					],
+					"criteres_evaluation": [
+						"Les compétences à mobiliser dans le cadre du projet sont identifiées.",
+						"Une grille d'évaluation des compétences actuelles et des compétences à acquérir est commentée.",
+						"Un plan de développement des compétences adapté au projet est établi et détaillé. Il permet de monter en compétences le public visé.",
+						"Des formations sont préconisées en fonction des besoins du projet et du profil des membres de l'équipe.",
+						"Les modalités de formation sont adaptées pour prendre en considération les spécificités liées au handicap des personnes formées. (ex : aménagement matériel, temps supplémentaire...)"
+					]
+				}
+			]
+		},
+		{
+			"id_activite": "A3.4",
+			"nom_activite": "Suivi du projet en lien avec le client",
+			"competences": [
+				{
+					"id_competence": "C3.4.1",
+					"description": "Effectuer des comptes rendus d'activités sur l'état d'avancement auprès du client en présentant les évolutions et améliorations du projet, en planifiant des points de validation, en établissant des indicateurs de satisfaction afin de favoriser l'adhésion et permettre la validation des avancées de production.",
+					"taches_associees": [
+						"Réalisation de comptes rendus",
+						"Définition les indicateurs de conformité des fonctionnalités au regard des attendus du projet"
+					],
+					"modalites_evaluation": [
+						"La présentation des comptes rendus sur les évolutions et améliorations du projet",
+						"La planification des points de validation réalisés",
+						"Les indicateurs de satisfaction mis en place"
+					],
+					"criteres_evaluation": [
+						"Les comptes rendus sont rédigés de manière claire et ordonnée.",
+						"Les comptes rendus permettent de faciliter les prises de décision du client.",
+						"Les points de validation sont organisés de manière à assurer le suivi qualité du projet (adéquation entre développement et fonctionnalités attendues, délais, ...).",
+						"Les indicateurs de satisfaction sont définis et sont cohérents au regard du projet."
+					]
+				},
+				{
+					"id_competence": "C3.4.2",
+					"description": "Réaliser une démonstration des fonctionnalités en s'appuyant sur la dernière version logicielle développée, en employant un vocabulaire adapté à son audience afin d'obtenir la validation du commanditaire avant livraison",
+					"taches_associees": [
+						"Démonstration des fonctionnalités développées",
+						"Validation avec le commanditaire des étapes du développement depuis la genèse jusqu'au déploiement en production"
+					],
+					"modalites_evaluation": [
+						"Une démonstration des fonctionnalités du logiciel par le candidat devant le jury"
+					],
+					"criteres_evaluation": [
+						"Le logiciel est utilisable.",
+						"La démonstration reprend les fonctionnalités attendues.",
+						"Le vocabulaire employé est adapté à une présentation client.",
+						"La démonstration permet d'aboutir à une validation du projet."
+					]
+				}
+			]
+		}
+	]
 }

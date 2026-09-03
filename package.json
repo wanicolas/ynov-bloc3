@@ -1,18 +1,29 @@
 {
-  "name": "oral-bloc3",
-  "type": "module",
-  "private": true,
-  "scripts": {
-    "build": "slidev build",
-    "dev": "slidev --open",
-    "export": "slidev export"
-  },
-  "dependencies": {
-    "@slidev/cli": "^52.19.1",
-    "vue": "^3.5.33"
-  },
-  "devDependencies": {
-    "prettier": "~3.9.6",
-    "prettier-plugin-slidev": "~1.0.5"
-  }
+	"name": "oral-bloc3",
+	"type": "module",
+	"private": true,
+	"scripts": {
+		"dev": "slidev --open",
+		"build": "slidev build",
+		"export": "slidev export",
+		"lint": "eslint .",
+		"lint:fix": "eslint . --fix",
+		"typecheck": "vue-tsc --noEmit",
+		"format": "prettier \"slides.md\" \"pages/**/*.md\" --cache --write",
+		"format:check": "prettier \"slides.md\" \"pages/**/*.md\" --cache --check"
+	},
+	"dependencies": {
+		"@slidev/cli": "^52.19.1",
+		"vue": "^3.5.33"
+	},
+	"devDependencies": {
+		"@antfu/eslint-config": "~9.5.1",
+		"@slidev/types": "~52.19.1",
+		"@unocss/eslint-plugin": "~66.9.2",
+		"eslint": "~10.9.1",
+		"prettier": "~3.9.6",
+		"prettier-plugin-slidev": "~1.0.5",
+		"typescript": "~5.9.3",
+		"vue-tsc": "~3.3.11"
+	}
 }
