@@ -1,12 +1,12 @@
 <script setup lang="ts">
 withDefaults(
 	defineProps<{
-		logo?: string;
+		logo?: string
 	}>(),
 	{
-		logo: "/YNOV_STRASBOURG_NOIR.svg",
+		logo: '/YNOV_STRASBOURG_NOIR.svg',
 	},
-);
+)
 </script>
 
 <template>
@@ -19,7 +19,7 @@ withDefaults(
 				:src="logo"
 				alt="Ynov Campus Strasbourg"
 				class="h-11 w-auto object-contain"
-			/>
+			>
 		</div>
 
 		<!-- Zone Titre & Sous-titre -->
