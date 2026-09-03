@@ -1,6 +1,6 @@
 <template>
 	<div class="slidev-layout end slide-centered">
-		<div class="max-w-4xl flex flex-col items-center justify-center px-4">
+		<div class="px-4 flex flex-col max-w-4xl items-center justify-center">
 			<slot />
 		</div>
 	</div>

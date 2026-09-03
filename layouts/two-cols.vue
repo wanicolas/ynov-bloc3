@@ -4,7 +4,7 @@
 			<slot />
 		</div>
 
-		<div class="grid grid-cols-2 flex-1 items-start gap-10">
+		<div class="flex-1 gap-10 grid grid-cols-2 items-start">
 			<div class="col-left">
 				<slot v-if="$slots.left" name="left" />
 				<slot v-else />

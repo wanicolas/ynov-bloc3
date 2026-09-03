@@ -10,9 +10,9 @@ withDefaults(
 </script>
 
 <template>
-	<div class="slidev-layout cover relative h-full flex flex-col justify-between bg-surface">
+	<div class="slidev-layout cover bg-surface flex flex-col h-full justify-between relative">
 		<!-- Logo Ynov en haut à droite -->
-		<div class="absolute right-12 top-8">
+		<div class="right-12 top-8 absolute">
 			<img
 				:src="logo"
 				alt="Ynov Campus Strasbourg"
@@ -21,7 +21,7 @@ withDefaults(
 		</div>
 
 		<!-- Zone Titre & Sous-titre -->
-		<div class="max-w-4xl flex flex-1 flex-col justify-center pt-6">
+		<div class="pt-6 flex flex-1 flex-col max-w-4xl justify-center">
 			<slot />
 		</div>
 	</div>

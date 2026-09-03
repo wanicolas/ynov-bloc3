@@ -1,11 +1,12 @@
-import { defineConfig, presetIcons, presetTypography, presetUno } from 'unocss'
+import {
+	defineConfig,
+	presetIcons,
+	presetTypography,
+	presetWind4,
+} from 'unocss'
 
 export default defineConfig({
-	presets: [
-		presetUno(),
-		presetIcons(),
-		presetTypography(),
-	],
+	presets: [presetWind4(), presetIcons(), presetTypography()],
 	theme: {
 		colors: {
 			'primary': '#000000',
@@ -23,9 +24,12 @@ export default defineConfig({
 	},
 	shortcuts: {
 		'slide-container': 'flex flex-col justify-start h-full bg-surface',
-		'slide-centered': 'flex flex-col items-center justify-center h-full text-center bg-surface',
-		'title-hero': 'text-5xl font-medium tracking-tight text-primary leading-tight',
-		'title-slide': 'text-3xl font-medium tracking-tight text-primary mb-8 leading-tight',
+		'slide-centered':
+			'flex flex-col items-center justify-center h-full text-center bg-surface',
+		'title-hero':
+			'text-5xl font-medium tracking-tight text-primary leading-tight',
+		'title-slide':
+			'text-3xl font-medium tracking-tight text-primary mb-8 leading-tight',
 		'subtitle-slide': 'text-lg text-muted font-normal leading-relaxed',
 		'footer-line': 'w-full border-t border-border mb-2',
 		'footer-text': 'text-[11px] text-subtle font-sans tracking-wide',

@@ -6,10 +6,10 @@ const websiteText = 'nicolaswalter.fr'
 <template>
 	<footer
 		v-if="!$frontmatter?.hideFooter"
-		class="absolute bottom-0 left-0 right-0 z-10 bg-surface px-12 pb-3 pt-1"
+		class="px-12 pb-3 pt-1 bg-surface bottom-0 left-0 right-0 absolute z-10"
 	>
 		<div class="footer-line" />
-		<div class="flex items-center justify-between footer-text">
+		<div class="footer-text flex items-center justify-between">
 			<!-- Left: Presenter - School - Date -->
 			<div>
 				{{ presenterText }}
@@ -17,9 +17,9 @@ const websiteText = 'nicolaswalter.fr'
 
 			<!-- Right: Dynamic -->
 			<div>
-				<div v-if="$nav.currentLayout === 'end'" class="flex items-center gap-1.5 text-primary">
+				<div v-if="$nav.currentLayout === 'end'" class="text-primary flex gap-1.5 items-center">
 					<span class="font-normal">{{ websiteText }}</span>
-					<img src="/logo_perso.svg" alt="Nicolas Walter" class="inline-block h-3.5 w-auto">
+					<img src="/logo_perso.svg" alt="Nicolas Walter" class="h-3.5 w-auto inline-block">
 				</div>
 				<div v-else-if="$nav.currentLayout === 'cover'" />
 				<div v-else class="text-primary font-normal">

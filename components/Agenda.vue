@@ -40,16 +40,16 @@ const gridClass = computed(() => {
 </script>
 
 <template>
-	<div class="grid w-full gap-8 text-center" :class="gridClass">
+	<div class="text-center gap-8 grid w-full" :class="gridClass">
 		<div
 			v-for="(item, index) in normalizedItems"
 			:key="index"
 			class="flex flex-col items-center justify-start"
 		>
-			<div class="mb-4 text-6xl text-primary font-medium tracking-tight">
+			<div class="text-6xl text-primary tracking-tight font-medium mb-4">
 				{{ item.number }}
 			</div>
-			<div class="max-w-xs text-xl text-primary font-normal leading-snug">
+			<div class="text-xl text-primary leading-snug font-normal max-w-xs">
 				{{ item.title }}
 			</div>
 		</div>
