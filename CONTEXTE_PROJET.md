@@ -60,8 +60,14 @@ Ce document synthétise l'ensemble des informations du projet présenté pour l'
   - Statuts des tickets mis à jour automatiquement via l'intégration GitHub (branches, PRs, merges).
   - Association automatique des PRs et des URLs de preview/démo générées par GitHub Actions.
   - Vues personnalisées, filtres d'équipe, jalons (milestones) et labellisation précise.
+- **Projet Linear :** `MG - Refactor Shop` (Mon Guichet - Refactor Shop).
 - **Communication interne :** Slack pour les échanges quotidiens, synchrones et asynchrones, réunions d'équipe et visios.
-- **Livraisons & Releases :** À chaque version déployée, publication systématique d'un **Changelog GitHub** technique et de **Notes de version** sur Linear.
+- **Livraisons & Releases :** À chaque version déployée, publication systématique d'un **Changelog GitHub** technique et de **Notes de version** sur Linear (tenues à jour pour chaque jalon).
+- **Relation & Cycle de Validation Client (Mulhouse / m2A) :**
+  1. *Début de sprint :* Re-consultation de la cliente en visio/mail pour cadrer et valider les fonctionnalités prioritaires à développer.
+  2. *Fin de développement / Sprint Review :* Présentation d'une démo en direct.
+  3. *Phase de test utilisateur :* La cliente teste la version avec son équipe municipale sur l'environnement de préproduction.
+  4. *Boucle de feedback :* Les retours sont analysés (si faisables, imputables à l'équipe (« de notre faute ») et compatibles avec les délais restants) ➔ correctif ➔ re-test ➔ déploiement en production (`e-services.mulhouse-alsace.fr`).
 
 ---
 
@@ -80,7 +86,29 @@ Ce document synthétise l'ensemble des informations du projet présenté pour l'
 
 ---
 
-## 7. Cas Concret d'Arbitrage Technique (Compétence C3.2.2)
+## 7. Historique Réel des Versions & Jalons (Linear)
+
+- **19 juin 2026 — v1.0.0 (Lancement officiel / Go-Live initial) :**
+  - *Backoffice :* Création et gestion du catalogue, offres, tarifs, jauges et plannings ; gestion des avoirs ; intégration du paiement d'État [PayFIP](https://www.payfip.gouv.fr/) ; gestion des demandes d'abonnements ; réservation « En tant que » ; export CSV complet ; stockage S3.
+  - *Boutique usager (FO) :* Catalogue réinscriptions, panier avec verrou de 30 minutes, calcul d'éligibilité par âge (mois/années), synchronisation *Mon Guichet*.
+  - *Infrastructure :* Déploiement en production sur `e-services.mulhouse-alsace.fr` (m2A).
+- **Fin juin à mi-juillet 2026 — v1.0.1 à v1.0.17 (Stabilisation & Interopérabilité) :**
+  - Correctifs ciblés : réconciliation PayFIP, webhooks panier, gestion des remboursements/créneaux, synchronisation profils *Mon Guichet*.
+- **30 juillet 2026 — v1.1.0A (Module Charge & Présence) :**
+  - Visualisation de la charge des activités et taux de remplissage par jauge.
+  - Génération automatique des feuilles de présence pour les maîtres-nageurs / agents.
+- **11 août 2026 — v1.2.0 (Gestion financière avancée) :**
+  - Ajustements de prix post-achat (hausses avec complément, baisses avec avoirs), génération de justificatifs PDF.
+- **17 août 2026 — v1.3.0 (Vente des Entrées en Piscine) :**
+  - *FO :* Ouverture de la vente des « Entrées en piscine » (billetterie unitaire / créneaux horaires).
+  - *BO :* Calendrier des jauges par piscine, tableau des commandes et vérification des entrées au guichet.
+- **02 septembre 2026 — v1.4.0 (Personnalisation & Analytics) :**
+  - *BO :* Configuration dynamique de l'ordre des étapes du tunnel d'achat usager ; nouveau tableau de bord avec indicateurs comptables et graphique d'évolution temporelle des transactions ; uniformisation des exports CSV.
+  - *FO :* Questionnaire guidé d'auto-évaluation du niveau de natation pour orienter le choix de cours.
+
+---
+
+## 8. Cas Concret d'Arbitrage Technique (Compétence C3.2.2)
 
 - **Problématique :** Implémentation d'une surcouche sur le composant DataTable de NuxtUI par Nicolas.
 - **Désaccord initial :**
@@ -94,7 +122,7 @@ Ce document synthétise l'ensemble des informations du projet présenté pour l'
 
 ---
 
-## 8. Management d'Équipe & Dynamique Humaine (Compétences C3.3.1 & C3.3.2)
+## 9. Management d'Équipe & Dynamique Humaine (Compétences C3.3.1 & C3.3.2)
 
 - **Styles managériaux appliqués :** Management situationnel (Hersey & Blanchard) :
   - Style *participatif* et *délégatif* lors des phases de conception et de développement avec l'équipe technique et l'UX.
@@ -109,7 +137,7 @@ Ce document synthétise l'ensemble des informations du projet présenté pour l'
 
 ---
 
-## 9. Déroulement de la Démonstration Logicielle (Compétence C3.4.2)
+## 10. Déroulement de la Démonstration Logicielle (Compétence C3.4.2)
 
 La démo en direct dure environ 5 à 7 minutes et s'appuie sur le code local et les environnements de préproduction :
 
