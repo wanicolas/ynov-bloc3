@@ -5,8 +5,7 @@ layout: section
 # Annexes Techniques
 
 <!--
-📚 **ANNEXES** :
-- Slides de réserve pour le temps de questions avec le jury.
+[Slide] "Voici nos slides de réserve technique pour la session de questions / réponses."
 -->
 
 ---
@@ -29,8 +28,10 @@ layout: default
 </v-clicks>
 
 <!--
-🔧 **ANNEXE CI/CD** :
-- À dégainer si le jury pose des questions sur l'automatisation des tests ou les environnements de preview.
+[Slide] "Détail de notre pipeline d'intégration et de livraison continues sous GitHub Actions."
+- "Sur chaque PR : typecheck strict, linter ESLint, Prettier, et tests unitaires Vitest bloquants."
+- "Génération d'une URL de démo éphémère transmise directement dans le ticket Linear pour recette rapide."
+- "Au tag de version : pipeline de build sécurisée injectant les configurations de production."
 -->
 
 ---
@@ -51,8 +52,9 @@ layout: default
 </v-clicks>
 
 <!--
-🏛️ **ANNEXE ARCHI** :
-- À dégainer si le jury demande comment le code de Mulhouse est isolé du cœur générique Shop.
+[Slide] "Détail de l'architecture découplée entre le cœur Shop et le plugin Aqua Mulhouse."
+- "Côté NestJS : modules d'entités abstraits réutilisables, surchargeables par injection de dépendances."
+- "Côté Nuxt 4 : architecture en Nuxt Layers pour mutualiser le socle UI du Back-Office tout en isolant le Front Usager."
 -->
 
 ---
@@ -70,6 +72,6 @@ layout: default
 | **Déploiement**     | Tag de version (`v1.x.x`)          | Déploiement en préproduction / production | _Released_    |
 
 <!--
-📋 **ANNEXE FLUX DE TRAVAIL** :
-- À dégainer si le jury interroge sur la gouvernance Git, le GitFlow ou l'interaction exacte Linear ↔ GitHub.
+[Slide] "Tableau de correspondance entre notre workflow Git et la mise à jour automatique sous Linear."
+- "Chaque action Git (branche, PR, merge, tag) met à jour le cycle de vie du ticket sans aucune intervention manuelle."
 -->

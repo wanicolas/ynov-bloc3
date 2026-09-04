@@ -21,12 +21,11 @@ layout: default
 </v-clicks>
 
 <!--
-🏢 **LOGITUD & MON GUICHET** :
-- Spécialiste du secteur public local. *Mon Guichet* = colonne vertébrale des démarches citoyennes.
-⚠️ **LE PROBLÈME** :
-- Vieux plugin Mulhouse à bout de souffle, dette accumulée, coût de maintenance intenable.
-💡 **L'OPPORTUNITÉ PRODUIT** :
-- Mulhouse finance la refonte ➔ Arbitrage stratégique : ne pas faire un "one-shot" spécifique, mais créer le produit e-commerce pérenne de Logitud.
+[Slide] "Pour bien comprendre les enjeux du projet, il faut poser le décor chez Logitud Solutions."
+[Clic 1] Écosystème : Logitud équipe des dizaines de mairies avec son progiciel GRU « Mon Guichet ». C'est le portail central où les citoyens effectuent l'ensemble de leurs démarches administratives.
+[Clic 2] Le problème : Mulhouse utilisait un vieux module « aqua shop » depuis plusieurs années. Une vraie impasse technique : code legacy, aucune testabilité, UX dépassée, et le moindre correctif créait des régressions en chaîne.
+[Clic 3] L'opportunité : Mulhouse vote un budget pour refondre sa billetterie. Au lieu de faire un simple patch sur-mesure jetable, la direction saisit l'occasion : financer le développement de notre propre moteur e-commerce générique, baptisé « Shop », et y greffer la stratégie de vente dédiée à Mulhouse.
+▶ Transition : "Voyons maintenant comment cette vision produit s'est traduite sur le plan de l'architecture logicielle..."
 -->
 
 ---
@@ -65,9 +64,9 @@ layout: two-cols
 </v-clicks>
 
 <!--
-🏗️ **ARCHITECTURE CORE / PLUGIN** :
-- **Shop** = moteur headless générique (NestJS + Nuxt 4).
-- **Aqua Mulhouse** = plugin de vente métier (spécificités aquatiques m2A).
-🔀 **NGINX REVERSE PROXY** :
-- Intégration transparente dans Mon Guichet : les agents municipaux conservent leurs repères, mais profitent d'une stack moderne et ultra-réactive.
+[Slide] "Notre réponse technique repose sur un découplage architectural strict entre le cœur et le métier."
+[Clic 1] Moteur Shop : Un cœur headless réutilisable. Back-end en NestJS pour une architecture modulaire en plugins, et front-end en Nuxt 4 avec NuxtUI. Il centralise le catalogue, le panier, les commandes et le paiement d'État PayFIP.
+[Clic 2] Plugin Aqua Mulhouse : Une surcouche métier dédiée aux spécificités aquatiques de l'agglomération (réservation par créneaux, gestion fine des jauges et abonnements).
+[Clic 3] Intégration Nginx : Le choix d'infrastructure clé : via un reverse proxy Nginx, les usagers et agents restent dans le portail de Mon Guichet. La bascule technologique est 100% transparente, tout en offrant un saut d'ergonomie massif.
+▶ Transition : "Pour orchestrer la réalisation de ce produit, nous devions adopter un cadre méthodologique agile et rigoureux..."
 -->

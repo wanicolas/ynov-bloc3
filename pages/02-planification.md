@@ -20,14 +20,11 @@ layout: default
 </v-clicks>
 
 <!--
-🔄 **MÉTHODOLOGIE (C3.1)** :
-- Scrum 2 semaines = équilibre parfait souplesse / engagement client.
-⚖️ **ARBITRAGE MÉTHODO** :
-- Cycle en V rejeté (trop rigide pour un produit nouveau).
-- Kanban rejeté (besoin de jalons fixes pour sécuriser la mise en prod de juin).
-⏱️ **RITUELS** :
-- Dailies courts et efficaces (15 min chrono).
-- Démo réelle sur préproduction à chaque fin de sprint.
+[Slide] "Piloter 8 personnes sur un produit à fortes dépendances impose une rigueur méthodologique claire."
+[Clic 1] Le choix de Scrum : Nous avons choisi Scrum avec des sprints de 2 semaines. C'est la cadence idéale pour synchroniser le dev front, l'API back, les maquettes et les validations clientes régulières.
+[Clic 2] Pourquoi pas le V ou Kanban ? Le cycle en V a été rejeté d'emblée : trop d'inconnues sur les règles métiers de Mulhouse, l'effet tunnel aurait été fatal. Et Kanban ne convenait pas car il nous fallait des jalons temporels fermes pour sécuriser la réouverture estivale des bassins.
+[Clic 3] Les 4 rituels : Sprint Planning de 2h pour calibrer l'effort, Dailies stricts de 15 min chaque matin, Sprint Review avec démo sur préprod devant la cliente, et Rétrospectives pour optimiser nos flux de travail.
+▶ Transition : "Cette méthodologie s'incarne dans une gouvernance claire, formalisée dans notre matrice RACI..."
 -->
 
 ---
@@ -48,12 +45,12 @@ layout: default
 | **Cliente Ville de Mulhouse** | Responsable piscines | Expression des besoins, recettes utilisateurs et retours d'usage  | **C / I** |
 
 <!--
-👥 **GOUVERNANCE (C3.1)** :
-- Équipe pluridisciplinaire de 8 personnes dédiées + DevOps partagé.
-🎯 **MON POSITIONNEMENT** :
-- Responsable de bout en bout du Front Usager « Aqua Mulhouse ».
-- Lead qualité / CI pour harmoniser le travail des 5 devs front.
-- Concepteur des composants clés en BO agent.
+[Slide] "Voici la cartographie des rôles et notre matrice RACI sur ce projet."
+- "La Direction générale est 'Accountable' sur le respect de l'enveloppe budgétaire et les engagements contractuels."
+- "Le pilotage est assuré par un binôme soudé : notre Lead Tech Front / Chef de Projet et notre UI/UX Designer."
+- "Mon positionnement personnel : En tant que développeur front et référent qualité, je suis 'Responsible' de l'intégralité du Front Usager Aqua Mulhouse, du socle CI/CD, des normes a11y, et des composants piliers du Back-Office."
+- "L'équipe s'appuie sur 4 autres devs front, 2 devs back NestJS, une équipe DevOps transverse pour l'infrastructure Nginx, et notre interlocutrice à la Ville de Mulhouse pour la validation continue."
+▶ Transition : "Avec cette gouvernance en place, comment avons-nous planifié notre calendrier ? Regardons la feuille de route..."
 -->
 
 ---
@@ -74,7 +71,7 @@ layout: default
     <div class="text-xs text-neutral-600">Prod m2A : abonnements, PayFIP, panier 30min, BO agent.</div>
   </div>
   <div class="p-3 border border-neutral-300 rounded bg-neutral-50">
-    <div class="font-mono text-xs text-neutral-500 mb-1">JUILLET 2026</div>
+    <div class="font-semibold text-neutral-900 mb-1">JUILLET 2026</div>
     <div class="font-semibold text-neutral-900 mb-1">v1.1 & v1.2</div>
     <div class="text-xs text-neutral-600">Charge des activités, feuilles de présence, ajustements prix & avoirs.</div>
   </div>
@@ -98,10 +95,11 @@ layout: default
 </v-clicks>
 
 <!--
-🗺️ **ROADMAP (C3.1)** :
-- Projet d'1 an de run continu (25 sprints).
-🎯 **JALON CLÉ DU 19 JUIN (v1.0.0)** :
-- Échéance non négociable : réouverture des inscriptions estivales.
-📈 **MONTÉE EN PUISSANCE** :
-- Socle abonnements d'abord, puis module charges/présence, puis billetterie unitaire, puis tunnel configurable.
+[Slide] "Le projet s'est déployé sur plus d'un an, découpé en 5 jalons de release majeurs."
+[Clic 1] Août 2025 : Cadrage initial, socle technique Nest/Nuxt, maquettage et mise en place de la CI.
+[Clic 2] 19 Juin 2026 - v1.0.0 : Notre jalon critique absolu. Ouverture en production sur e-services.mulhouse-alsace.fr pour les inscriptions estivales : abonnements, panier temporisé et passerelle PayFIP.
+[Clic 3] Juillet 2026 - v1.1 & v1.2 : Module de charge des bassins, génération de feuilles de présence pour maîtres-nageurs et gestion des avoirs.
+[Clic 4] Août 2026 - v1.3.0 : Déploiement de la billetterie unitaire des entrées en piscine.
+[Clic 5] Septembre 2026 - v1.4.0 : Tout récent, tunnel d'achat personnalisable côté BO et questionnaire d'auto-évaluation natation.
+▶ Transition : "Pour piloter ces 25 sprints sans dériver, nous avions besoin d'un outillage de suivi ultra-connecté..."
 -->

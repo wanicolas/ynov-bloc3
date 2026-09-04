@@ -70,17 +70,6 @@ pnpm run dev
 
 Le serveur de développement démarre sur [http://localhost:3030](http://localhost:3030) avec hot-reload instantané.
 
-### Raccourcis clavier essentiels en présentation
-
-| Raccourci      | Action                                                                             |
-| -------------- | ---------------------------------------------------------------------------------- |
-| `P`            | **Ouvrir le Mode Présentateur** (prompteur, chronomètre, vue de la slide suivante) |
-| `F`            | Basculer en plein écran                                                            |
-| `O`            | Vue d'ensemble de toutes les slides (Overview)                                     |
-| `D`            | Activer le mode dessin / annotations sur slide                                     |
-| `Espace` / `→` | Slide ou étape d'animation suivante (`v-click`)                                    |
-| `←`            | Slide précédente                                                                   |
-
 ### Contrôle qualité & Linter
 
 ```bash

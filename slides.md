@@ -1,4 +1,6 @@
 ---
+duration: 30min
+timer: countdown
 theme: none
 title: Coordonner et piloter un projet de développement d’applications logicielles
 author: Nicolas WALTER
@@ -22,11 +24,10 @@ htmlAttrs:
 <p class="text-base text-neutral-400">Projet « Shop » & « Aqua Mulhouse » — Logitud Solutions</p>
 
 <!--
-🎯 **INTRO PERSO (1 min)** :
-- Nicolas WALTER, alternant chez Logitud depuis août 2025.
-- Rôle : Dev Front, référent accessibilité & qualité/CI, créateur des composants piliers BO et du Front Usager.
-- **Projet** : Moteur e-commerce générique « Shop » + module métier « Aqua Mulhouse » pour la Ville de Mulhouse.
-- **Enjeu de l'oral** : Démontrer la posture de coordination/lead tech sur 25 sprints (pilotage, arbitrages, équipe, client).
+[Slide] "Bonjour à tous. Je suis Nicolas WALTER, développeur front-end en alternance chez Logitud Solutions depuis août 2022."
+- "Aujourd'hui, je vous présente mon rôle de coordination et de lead technique sur un projet stratégique mené sur plus d'un an et 25 sprints : le moteur e-commerce « Shop » et sa déclinaison métier « Aqua Mulhouse »."
+- "L'enjeu de cette soutenance est de vous démontrer comment nous avons articulé pilotage agile, arbitrages d'architecture, qualité logicielle et management d'équipe au service d'un client public exigeant."
+▶ Transition : "Pour structurer notre échange, voici le programme des 30 prochaines minutes..."
 -->
 
 ---
@@ -43,10 +44,12 @@ layout: agenda
 ]" />
 
 <!--
-⏱️ **TIMING DU TALK** :
-- ~23 minutes d'exposé méthodologique & technique.
-- ~6 à 7 minutes de démonstration live en fin de parcours.
-- 4 axes alignés sur les compétences du référentiel RNCP Bloc 3.
+[Slide] "Notre présentation suivra 4 grandes étapes alignées sur les compétences du référentiel :"
+- "01. Le cadrage stratégique et la planification de nos activités."
+- "02. Le pilotage opérationnel sous Linear et la résolution d'arbitrages techniques majeurs."
+- "03. Le management humain, la gestion des désaccords et la montée en compétences de l'équipe."
+- "04. La relation avec la Ville de Mulhouse, suivie d'une démonstration logicielle en direct du parcours usager et agent."
+▶ Transition : "Commençons tout de suite par le contexte initial et la genèse du besoin..."
 -->
 
 ---

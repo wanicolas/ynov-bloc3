@@ -6,7 +6,7 @@ Ce document synthétise l'ensemble des informations du projet présenté pour l'
 
 ## 1. Cadre de la Soutenance & Objectifs RNCP
 
-- **Candidat :** Nicolas WALTER (en alternance chez Logitud depuis août 2025).
+- **Candidat :** Nicolas WALTER (en alternance chez Logitud depuis août 2022).
 - **Intitulé du bloc :** *Coordonner et piloter un projet de développement d’applications logicielles*.
 - **Format de l'épreuve :** 45 minutes au total (30 minutes de présentation orale incluant une démonstration logicielle + 15 minutes de questions/réponses avec le jury).
 - **Compétences clés évaluées :** Voir [les consignes](./consignes/consignes.json)
