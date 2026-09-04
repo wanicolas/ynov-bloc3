@@ -9,7 +9,7 @@
 
 		<!-- Right: Dynamic -->
 		<a
-			v-if="$nav.currentLayout === 'end'"
+			v-if="$nav.currentPage === 1 || $nav.currentLayout === 'end'"
 			href="https://nicolaswalter.fr"
 			class="flex gap-2 items-center"
 		>
