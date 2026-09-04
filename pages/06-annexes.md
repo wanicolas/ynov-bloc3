@@ -29,8 +29,11 @@ layout: default
 
 <!--
 [Slide] "Détail de notre pipeline d'intégration et de livraison continues sous GitHub Actions."
+
 - "Sur chaque PR : typecheck strict, linter ESLint, Prettier, et tests unitaires Vitest bloquants."
+
 - "Génération d'une URL de démo éphémère transmise directement dans le ticket Linear pour recette rapide."
+
 - "Au tag de version : pipeline de build sécurisée injectant les configurations de production."
 -->
 
@@ -53,7 +56,9 @@ layout: default
 
 <!--
 [Slide] "Détail de l'architecture découplée entre le cœur Shop et le plugin Aqua Mulhouse."
+
 - "Côté NestJS : modules d'entités abstraits réutilisables, surchargeables par injection de dépendances."
+
 - "Côté Nuxt 4 : architecture en Nuxt Layers pour mutualiser le socle UI du Back-Office tout en isolant le Front Usager."
 -->
 
@@ -73,5 +78,6 @@ layout: default
 
 <!--
 [Slide] "Tableau de correspondance entre notre workflow Git et la mise à jour automatique sous Linear."
+
 - "Chaque action Git (branche, PR, merge, tag) met à jour le cycle de vie du ticket sans aucune intervention manuelle."
 -->

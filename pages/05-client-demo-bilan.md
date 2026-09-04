@@ -22,12 +22,19 @@ layout: default
 
 <!--
 [Slide] "La relation avec la Ville de Mulhouse s'est construite sur une boucle de validation très réactive."
+
 [Clic 1] Une interlocutrice clé : La responsable des piscines de l'agglomération (m2A), impliquée au quotidien.
+
 [Clic 2] Cadrage amont : En début de sprint, consultation par mail ou visio pour confirmer que nos priorités répondent à ses besoins immédiats.
+
 [Clic 3] Démo de sprint : En fin de sprint, démonstration live sur notre environnement de préproduction.
+
 [Clic 4] Recette municipale : La cliente teste avec son équipe d'agents en mairie et en caisse.
+
 [Clic 5] Boucle de feedback : Si un retour est légitime, de notre fait et réalisable dans les temps impartis, nous le corrigeons, retestons et déployons en production.
+
 [Clic 6] Traçabilité : Chaque livraison est accompagnée de son changelog GitHub et de ses notes de version officielles sur Linear.
+
 ▶ Transition : "Cette méthode de travail a produit des résultats mesurables sur la satisfaction client..."
 -->
 
@@ -63,10 +70,15 @@ layout: default
 
 <!--
 [Slide] "Voici les trois indicateurs clés attestant de la satisfaction de la collectivité."
+
 [Clic 1] 100% d'acceptation : L'ensemble des fonctionnalités majeures ont été validées sans réserve lors des revues de sprint.
+
 [Clic 2] Réactivité sous 48h : Prise en compte et résolution immédiate des anomalies signalées pendant les recettes clientes.
+
 [Clic 3] Zéro crash en production : La plateforme a encaissé sans aucune indisponibilité les vagues d'inscriptions scolaires et estivales sur e-services.mulhouse-alsace.fr.
+
 [Clic 4] Adhésion des agents : Les agents municipaux ont immédiatement plébiscité le gain de temps sur la réservation et la consultation des jauges par rapport à l'ancien outil.
+
 ▶ Transition : "Passons maintenant aux choses concrètes : le cadrage de notre démonstration en direct..."
 -->
 
@@ -109,25 +121,32 @@ layout: default
 
 <!--
 [Slide] "Pour cette démonstration de 5 minutes, nous allons valider la synchronisation temps réel de bout en bout."
+
 [Clic 1] Acte 1 - Côté Citoyen (Aqua Mulhouse) : Consultation des offres de bassins, choix du créneau horaire, panier, ajout d'un voucher de réduction et validation du paiement PayFIP simulé.
+
 [Clic 2] Acte 2 - Côté Agent (Shop Back-Office) : Consultation de la liste via notre DataTable bi-mode, réservation 'En tant que' pour un usager au guichet, et contrôle immédiat de la commande passée à l'instant en ligne.
+
 ▶ Transition : "Bascule immédiate sur notre environnement de préproduction..."
 -->
 
 ---
 layout: default
-zoom: 0.6
 ---
 
-<iframe src="https://mulhouse4.staging.numesia.fr" height="100%" width="100%" 
+<iframe src="https://mulhouse4.staging.numesia.fr" height="100%" width="100%" class="zoom-60"
 ></iframe>
 
 <!--
 [Slide] "Nous voici en direct sur notre plateforme de préproduction mulhouse4.staging.numesia.fr."
+
 - "Étape 1 : Je consulte les entrées en piscine, je sélectionne le bassin Pierre et Marie Curie et le créneau du samedi matin."
+
 - "Étape 2 : J'ajoute la place au panier, j'applique mon bon de réduction, et je valide le paiement PayFIP simulé."
+
 - "Étape 3 : Je bascule maintenant sur la vue Back-Office Agent. Regardez la réactivité de la DataTable : je filtre sur aujourd'hui, zéro temps de latence. La commande que je viens de créer est déjà là."
+
 - "Étape 4 : Je vous montre la réservation 'En tant que' au guichet, et l'export direct au format CSV des résultats filtrés."
+
 ▶ Transition : "Après cette démonstration fonctionnelle, tirons le bilan de cette année de coordination..."
 -->
 
@@ -153,9 +172,13 @@ layout: default
 
 <!--
 [Slide] "Pour conclure cette présentation, que retenir de cette expérience de coordination ?"
+
 [Clic 1] Succès produit : Logitud dispose désormais d'un moteur e-commerce générique scalable, et Mulhouse d'un service public moderne et stable, avec 25 sprints menés sans dérive.
+
 [Clic 2] Posture de Lead : J'ai appris que coordonner ne consiste pas à imposer sa technique, mais à écouter, à trancher par la preuve factuelle (le POC), et à trouver le compromis intelligent entre idéal technique et contrainte budgétaire.
+
 [Clic 3] Fédération de l'équipe : En respectant les appétences des développeurs et en partageant les décisions avec transparence, on crée un collectif soudé et performant dans la durée.
+
 ▶ Transition : "Je vous remercie pour votre attention et je suis à votre disposition pour notre échange..."
 -->
 
@@ -178,5 +201,6 @@ layout: end
 
 <!--
 [Slide] "Merci à tous les deux. Je suis à votre entière écoute pour vos questions."
+
 - [Garder les slides d'annexes prêtes sur le côté pour illustrer les réponses techniques si nécessaire].
 -->

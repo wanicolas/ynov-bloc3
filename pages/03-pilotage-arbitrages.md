@@ -36,9 +36,13 @@ layout: two-cols
 
 <!--
 [Slide] "Pour piloter la production au quotidien, nous avons interconnecté Linear et GitHub Actions."
+
 [Clic 1] Traçabilité Git : Nos branches feat ou fix sont couplées aux tickets Linear. Le statut se met à jour tout seul : 'In Progress' au premier push, 'In Review' à l'ouverture de la PR, et 'Done' au merge. Zéro saisie manuelle.
+
 [Clic 2] Démo URLs éphémères : Sur chaque PR, la CI génère une URL de test isolée. L'UX Designer et la cliente peuvent tester la fonctionnalité en 30 secondes sans attendre un déploiement global.
+
 [Clic 3] Gestion des cycles dans Linear : Cycles de 2 semaines, chiffrage en suite de Fibonacci, et des vues personnalisées par spécialité pour donner au lead une visibilité parfaite sans micro-management.
+
 ▶ Transition : "Cet écosystème nous a fourni des métriques d'avancement très précises tout au long du projet..."
 -->
 
@@ -76,10 +80,15 @@ layout: default
 
 <!--
 [Slide] "Voici les indicateurs de performance réels enregistrés au cours de nos 25 sprints."
+
 [Clic 1] Volume : 1 366 tickets terminés à date, ce qui démontre l'intensité de la production et la continuité de notre run.
+
 [Clic 2] Vélocité moyenne : 57 tickets par sprint, avec une médiane historique à 51.
+
 [Clic 3] Accélération récente : Nos derniers sprints tournent entre 50 et 80 tickets clos. Cette hausse de plus de 30% s'explique directement par l'effet de levier de nos composants front réutilisables.
+
 [Clic 4] Respect des engagements : 100% des releases ont été livrées dans les temps, garantissant la tenue des budgets.
+
 ▶ Transition : "Cette cadence de production s'appuie sur une industrialisation stricte de la qualité logicielle..."
 -->
 
@@ -121,9 +130,13 @@ layout: two-cols
 
 <!--
 [Slide] "Pour sécuriser une plateforme gérant de l'argent public, la qualité logicielle est non négociable."
+
 [Clic 1] Pipeline CI/CD : J'ai configuré notre chaîne GitHub Actions bloquante : typage TypeScript strict via vue-tsc, linter ESLint, Prettier et tests unitaires Vitest exécutés à chaque commit.
+
 [Clic 2] Couverture Back-end (85%) : Nos 2 devs back maintiennent 85% de couverture. Une exigence absolue pour verrouiller les flux financiers PayFIP, le calcul des avoirs et les réservations concurrentes.
+
 [Clic 3] Analyse critique Front-end (< 30%) : Côté front, nous sommes sous les 30%. Nous avons blindé les tests unitaires sur les helpers et composants critiques, mais nous avons fait l'arbitrage assumé de ne pas faire d'E2E pour tenir la date de sortie estivale.
+
 ▶ Transition : "Cette gestion des compromis m'amène au cas d'arbitrage le plus instructif du projet : notre composant de DataTable..."
 -->
 
@@ -160,9 +173,13 @@ layout: default
 
 <!--
 [Slide] "Dans tout projet, il arrive un moment où deux visions techniques s'opposent. Voici notre cas d'arbitrage majeur."
+
 [Clic 1] Le besoin : Concevoir la surcouche de DataTable du Back-Office pour afficher les créneaux, offres et commandes. L'outil quotidien des agents de caisse.
+
 [Clic 2] Option A (Ma vision UX) : Utiliser TanStack Table côté client avec un préchargement initial. Résultat : tri, recherche et filtrage instantanés en mémoire, zéro temps de chargement, une fluidité d'application native.
+
 [Clic 3] Option B (L'habitude de l'équipe) : L'équipe soutenait le modèle 'full-backend' classique : refaire un appel API à chaque lettre tapée dans la recherche ou chaque clic de pagination. Une latence permanente pour l'agent au guichet.
+
 ▶ Transition : "Face à ce blocage, comment convaincre sans entrer dans un débat d'opinion ? Par la preuve du code..."
 -->
 
@@ -201,8 +218,12 @@ layout: two-cols
 
 <!--
 [Slide] "Ma démarche de lead a été pragmatique : développer un POC pour dépasser les positions dogmatiques."
+
 [Clic 1] Le POC : En une demi-journée, j'ai codé un prototype fonctionnel. Démonstration devant le Lead Tech et l'UX Designer : la fluidité a parlé d'elle-même, l'adhésion a été immédiate.
+
 [Clic 2] Le compromis Bi-Mode : Plutôt que d'imposer le 100% front, nous avons conçu un composant 'bi-mode'. Le mode client s'active par défaut sur les listes usuelles, et le mode serveur reste disponible pour les volumes géants.
+
 [Clic 3] L'énorme bonus export : Les données étant en mémoire front, nous avons offert aux agents un bouton d'export CSV et PDF direct (page courante vs totalité de la table), sans coder la moindre route serveur supplémentaire !
+
 ▶ Transition : "Cette réussite technique s'enracine dans une dynamique d'équipe saine et un management adapté..."
 -->
