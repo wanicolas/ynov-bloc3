@@ -39,6 +39,7 @@ Le support a été conçu pour structurer et rythmer la soutenance orale devant 
 ```text
 .
 ├── slides.md               # Entrée principale de la présentation (frontmatter & slides)
+├── pages                   # Contenu importé par slides.md
 ├── layouts/                # Layouts Slidev réutilisables
 ├── components/             # Composants Vue custom intégrables dans le Markdown
 ├── global-bottom.vue       # Layer global persistant (footer contextuel, auteur, pagination)
