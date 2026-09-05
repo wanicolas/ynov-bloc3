@@ -8,9 +8,9 @@ layout: default
 
 - **Cadre Agile Scrum en sprints de 2 semaines**
   - _Pourquoi Scrum ?_ Rythme itératif prédictible, adapté aux dépendances fortes entre Front, Back, UX et Client.
+- **Rejet du Cycle en V et de Kanban pur**
   - _Pourquoi pas le Cycle en V ?_ Effet tunnel trop risqué ; incapacité d'adapter les règles métiers tarifaires en cours de route.
   - _Pourquoi pas Kanban pur ?_ Nécessité d'échéances fixes contractuelles pour synchroniser la Direction et la réouverture estivale des bassins.
-
 - **Rituels structurants de l'équipe**
   - **Sprint Planning (2h) :** Découpage des US, estimation de complexité, engagement collectif.
   - **Daily Stand-up (15 min) :** Synchronisation quotidienne, levée immédiate des blocages.
@@ -20,13 +20,13 @@ layout: default
 </v-clicks>
 
 <!--
-[Slide] "Piloter 8 personnes sur un produit à fortes dépendances impose une rigueur méthodologique claire."
+"Piloter 8 personnes sur un produit à fortes dépendances impose une rigueur méthodologique claire."
 
-[Clic 1] Le choix de Scrum : Nous avons choisi Scrum avec des sprints de 2 semaines. C'est la cadence idéale pour synchroniser le dev front, l'API back, les maquettes et les validations clientes régulières.
+[click] Le choix de Scrum : Nous avons choisi Scrum avec des sprints de 2 semaines. C'est la cadence idéale pour synchroniser le dev front, l'API back, les maquettes et les validations clientes régulières.
 
-[Clic 2] Pourquoi pas le V ou Kanban ? Le cycle en V a été rejeté d'emblée : trop d'inconnues sur les règles métiers de Mulhouse, l'effet tunnel aurait été fatal. Et Kanban ne convenait pas car il nous fallait des jalons temporels fermes pour sécuriser la réouverture estivale des bassins.
+[click] Pourquoi pas le V ou Kanban ? Le cycle en V a été rejeté d'emblée : trop d'inconnues sur les règles métiers de Mulhouse, l'effet tunnel aurait été fatal. Et Kanban ne convenait pas car il nous fallait des jalons temporels fermes pour sécuriser la réouverture estivale des bassins.
 
-[Clic 3] Les 4 rituels : Sprint Planning de 2h pour calibrer l'effort, Dailies stricts de 15 min chaque matin, Sprint Review avec démo sur préprod devant la cliente, et Rétrospectives pour optimiser nos flux de travail.
+[click] Les 4 rituels : Sprint Planning de 2h pour calibrer l'effort, Dailies stricts de 15 min chaque matin, Sprint Review avec démo sur préprod devant la cliente, et Rétrospectives pour optimiser nos flux de travail.
 
 ▶ Transition : "Cette méthodologie s'incarne dans une gouvernance claire, formalisée dans notre matrice RACI..."
 -->
@@ -49,7 +49,7 @@ layout: default
 | **Cliente Ville de Mulhouse** | Responsable piscines | Expression des besoins, recettes utilisateurs et retours d'usage    | **C / I** |
 
 <!--
-[Slide] "Voici la cartographie des rôles et notre matrice RACI sur ce projet."
+"Voici la cartographie des rôles et notre matrice RACI sur ce projet."
 
 - "La Direction générale est 'Accountable' sur le respect de l'enveloppe budgétaire et les engagements contractuels."
 
@@ -69,6 +69,7 @@ layout: default
 # Feuille de Route & Jalons de Réalisation (C3.1)
 
 <div class="grid grid-cols-5 gap-3 my-6 text-sm">
+<v-clicks>
   <div class="p-3 border border-neutral-300 rounded bg-neutral-50">
     <div class="font-mono text-xs text-neutral-500 mb-1">AOÛT 2025</div>
     <div class="font-semibold text-neutral-900 mb-1">Cadrage & Socle</div>
@@ -94,27 +95,21 @@ layout: default
     <div class="font-semibold text-neutral-900 mb-1">v1.4.0 Analytics</div>
     <div class="text-xs text-neutral-600">Tunnel configurable, questionnaire natation, stats comptables.</div>
   </div>
+</v-clicks>
 </div>
 
-<v-clicks>
-
-- **Découpage par lots à forte valeur ajoutée :** Priorisation de l'ouverture de la saison estivale (v1.0.0).
-- **Points de vigilance maîtrisés :** Sécurisation de l'intégration PayFIP et gestion de la haute concurrence sur les créneaux.
-
-</v-clicks>
-
 <!--
-[Slide] "Le projet s'est déployé sur plus d'un an, découpé en 5 jalons de release majeurs."
+"Le projet s'est déployé sur plus d'un an, découpé en 5 jalons de release majeurs."
 
-[Clic 1] Août 2025 : Cadrage initial, socle technique Nest/Nuxt, maquettage et mise en place de la CI.
+[click] Août 2025 : Cadrage initial, socle technique Nest/Nuxt, maquettage et mise en place de la CI.
 
-[Clic 2] 19 Juin 2026 - v1.0.0 : Notre jalon critique absolu. Ouverture en production sur e-services.mulhouse-alsace.fr pour les inscriptions estivales : abonnements, panier temporisé et passerelle PayFIP.
+[click] 19 Juin 2026 - v1.0.0 : Notre jalon critique absolu. Ouverture en production sur e-services.mulhouse-alsace.fr pour les inscriptions estivales : abonnements, panier temporisé et passerelle PayFIP.
 
-[Clic 3] Juillet 2026 - v1.1 & v1.2 : Module de charge des bassins, génération de feuilles de présence pour maîtres-nageurs et gestion des avoirs.
+[click] Juillet 2026 - v1.1 & v1.2 : Module de charge des bassins, génération de feuilles de présence pour maîtres-nageurs et gestion des avoirs.
 
-[Clic 4] Août 2026 - v1.3.0 : Déploiement de la billetterie unitaire des entrées en piscine.
+[click] Août 2026 - v1.3.0 : Déploiement de la billetterie unitaire des entrées en piscine.
 
-[Clic 5] Septembre 2026 - v1.4.0 : Tout récent, tunnel d'achat personnalisable côté BO et questionnaire d'auto-évaluation natation.
+[click] Septembre 2026 - v1.4.0 : Tout récent, tunnel d'achat personnalisable côté BO et questionnaire d'auto-évaluation natation.
 
 ▶ Transition : "Pour piloter ces 25 sprints sans dériver, nous avions besoin d'un outillage de suivi ultra-connecté..."
 -->

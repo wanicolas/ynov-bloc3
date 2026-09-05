@@ -5,7 +5,7 @@ layout: section
 # Annexes Techniques
 
 <!--
-[Slide] "Voici nos slides de réserve technique pour la session de questions / réponses."
+"Voici nos slides de réserve technique pour la session de questions / réponses."
 -->
 
 ---
@@ -28,13 +28,11 @@ layout: default
 </v-clicks>
 
 <!--
-[Slide] "Détail de notre pipeline d'intégration et de livraison continues sous GitHub Actions."
+"Détail de notre pipeline d'intégration et de livraison continues sous GitHub Actions."
 
-- "Sur chaque PR : typecheck strict, linter ESLint, Prettier, et tests unitaires Vitest bloquants."
+[click] Workflows de Pull Request : Sur chaque PR, déclenchement bloquant du typecheck strict (vue-tsc), du linter ESLint, de Prettier et des tests unitaires Vitest, complété par la génération d'une URL de démo éphémère synchronisée sur Linear.
 
-- "Génération d'une URL de démo éphémère transmise directement dans le ticket Linear pour recette rapide."
-
-- "Au tag de version : pipeline de build sécurisée injectant les configurations de production."
+[click] Workflow de Release : Au tag de version (v*.*.*), pipeline de build sécurisée injectant les configurations de production et déploiement automatisé.
 -->
 
 ---
@@ -56,13 +54,11 @@ layout: default
 </v-clicks>
 
 <!--
-[Slide] "Détail de notre architecture découplée entre le back-end agnostique et le front-end traducteur de domaine."
+"Détail de notre architecture découplée entre le back-end agnostique et le front-end traducteur de domaine."
 
-- "Côté NestJS : un moteur e-commerce REST headless purement transactionnel. Il manipule des stocks, des jauges et des paniers sans aucune connaissance du domaine des piscines."
+[click] Back-end NestJS : Moteur e-commerce REST headless purement transactionnel. Il manipule des stocks, des jauges et des paniers sans aucune connaissance du domaine des piscines.
 
-- "Côté Nuxt 4 : le front agit comme couche de traduction de domaine (Adapter pattern). C'est lui qui transforme ces entités abstraites en expérience usager aquatique concrète."
-
-- "Nuxt Layers : mutualisation efficace du socle UI commun et des composants complexes (comme le DataTable) entre le Back-Office Agent et le Front Usager."
+[click] Front-end Nuxt 4 & Nuxt Layers : Le front agit comme couche de traduction de domaine (Adapter pattern) pour convertir la structure abstraite en parcours aquatique, tout en mutualisant le socle UI Back-Office via les Nuxt Layers.
 -->
 
 ---
@@ -80,7 +76,7 @@ layout: default
 | **Déploiement**     | Tag de version (`v1.x.x`)          | Déploiement en préproduction / production | _Released_    |
 
 <!--
-[Slide] "Tableau de correspondance entre notre workflow Git et la mise à jour automatique sous Linear."
+"Tableau de correspondance entre notre workflow Git et la mise à jour automatique sous Linear."
 
 - "Chaque action Git (branche, PR, merge, tag) met à jour le cycle de vie du ticket sans aucune intervention manuelle."
 -->
