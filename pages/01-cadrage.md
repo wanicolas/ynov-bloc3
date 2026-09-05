@@ -23,7 +23,7 @@ layout: default
 <!--
 [Slide] "Pour bien comprendre les enjeux du projet, il faut poser le décor chez Logitud Solutions."
 
-[Clic 1] Écosystème : Logitud équipe des centaines de mairies avec son progiciel GRU « Mon Guichet ». C'est le portail central où les citoyens effectuent l'ensemble de leurs démarches administratives.
+[Clic 1] Écosystème : Logitud équipe des dizaines de mairies avec son progiciel GRU « Mon Guichet ». C'est le portail central où les citoyens effectuent l'ensemble de leurs démarches administratives.
 
 [Clic 2] Le problème : Mulhouse utilisait un vieux module « aqua shop » depuis plusieurs années. Une vraie impasse technique : code legacy, aucune testabilité, UX dépassée, et le moindre correctif créait des régressions en chaîne.
 

@@ -154,7 +154,7 @@ body,
 
 .slidev-layout th,
 .slidev-layout td {
-	@apply py-3 px-4 text-left border-b border-neutral-200 border-r border-neutral-100;
+	@apply py-1.5 px-2 text-left border-b border-neutral-200 border-r border-neutral-100;
 }
 
 .slidev-layout th:last-child,
