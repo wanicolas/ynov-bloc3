@@ -1,4 +1,5 @@
----duration: 30min
+---
+duration: 30min
 timer: countdown
 theme: none
 title: Coordonner et piloter un projet de développement d’applications logicielles
@@ -23,7 +24,7 @@ htmlAttrs:
 <p class="text-base text-neutral-400">Projet « Shop » & « Aqua Mulhouse » — Logitud Solutions</p>
 
 <!--
-[Slide] "Bonjour à tous. Je suis Nicolas WALTER, développeur front-end en alternance chez Logitud Solutions depuis août 2022."
+"Bonjour à tous. Je suis Nicolas WALTER, développeur front-end en alternance chez Logitud Solutions depuis août 2022."
 
 - "Aujourd'hui, je vous présente mon rôle de coordination et de lead technique sur un projet stratégique mené sur plus d'un an et 25 sprints : le moteur e-commerce « Shop » et sa déclinaison métier « Aqua Mulhouse »."
 
@@ -46,7 +47,7 @@ layout: agenda
 ]" />
 
 <!--
-[Slide] "Notre présentation suivra 4 grandes étapes alignées sur les compétences du référentiel :"
+"Notre présentation suivra 4 grandes étapes alignées sur les compétences du référentiel :"
 
 - "01. Le cadrage stratégique et la planification de nos activités."
 
