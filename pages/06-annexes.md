@@ -48,6 +48,7 @@ layout: default
   - Manipulation exclusive d'entités abstraites : articles, créneaux horaires, jauges de capacité, paiements PayFIP.
   - Zéro couplage avec le domaine aquatique : moteur universel prêt pour tout autre besoin de collectivité.
 - **Front-end Nuxt 4 : Couche d'Adaptation & Traduction Métier :**
+
   - Pattern Adaptateur : mapping direct des articles génériques en _bassins_, _cours de natation_ et _abonnements_.
   - Architecture en Nuxt Layers pour mutualiser le socle UI du Back-Office Agent tout en isolant le Front-Office Usager.
 

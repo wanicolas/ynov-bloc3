@@ -9,8 +9,7 @@
 
 @font-face {
 	font-family: "Hanken Grotesk";
-	src: url("/fonts/HankenGrotesk-Italic-VariableFont_wght.ttf")
-		format("truetype");
+	src: url("/fonts/HankenGrotesk-Italic-VariableFont_wght.ttf") format("truetype");
 	font-weight: 100 900;
 	font-style: italic;
 	font-display: swap;
@@ -26,8 +25,7 @@
 
 @font-face {
 	font-family: "JetBrains Mono";
-	src: url("/fonts/JetBrainsMono-Italic-VariableFont_wght.ttf")
-		format("truetype");
+	src: url("/fonts/JetBrainsMono-Italic-VariableFont_wght.ttf") format("truetype");
 	font-weight: 100 900;
 	font-style: italic;
 	font-display: swap;

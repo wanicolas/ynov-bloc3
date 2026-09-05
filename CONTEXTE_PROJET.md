@@ -7,7 +7,7 @@ Ce document synthétise l'ensemble des informations du projet présenté pour l'
 ## 1. Cadre de la Soutenance & Objectifs RNCP
 
 - **Candidat :** Nicolas WALTER (en alternance chez Logitud depuis août 2022).
-- **Intitulé du bloc :** *Coordonner et piloter un projet de développement d’applications logicielles*.
+- **Intitulé du bloc :** _Coordonner et piloter un projet de développement d’applications logicielles_.
 - **Format de l'épreuve :** 45 minutes au total (30 minutes de présentation orale incluant une démonstration logicielle + 15 minutes de questions/réponses avec le jury).
 - **Compétences clés évaluées :** Voir [les consignes](./consignes/consignes.json)
 
@@ -16,11 +16,11 @@ Ce document synthétise l'ensemble des informations du projet présenté pour l'
 ## 2. Contexte Entreprise & Enjeux Métiers
 
 - **Entreprise :** Logitud, éditeur de solutions logicielles spécialisé pour les collectivités territoriales.
-- **Écosystème existant :** *Mon Guichet*, progiciel de GRU (Gestion de la Relation Usager) déjà utilisé par de nombreuses collectivités, dont la Ville de Mulhouse.
+- **Écosystème existant :** _Mon Guichet_, progiciel de GRU (Gestion de la Relation Usager) déjà utilisé par de nombreuses collectivités, dont la Ville de Mulhouse.
 - **Dette technique & problème initial :** Mulhouse utilisait depuis plusieurs années un module / plugin historique dédié à leurs piscines (« aqua shop »). Ce module était ancien, très limité fonctionnellement et devenu inmaintenable au fil du temps.
-- **Déclencheur client :** La Ville de Mulhouse a mandaté et financé Logitud pour refondre complètement cette partie aquatique tout en s'interfaçant avec *Mon Guichet*.
-- **Vision Produit & Stratégie Logitud :** Plutôt que de coder un patch spécifique jetable, Logitud a capitalisé sur ce financement pour concevoir un véritable **moteur e-commerce 100% générique et agnostique (« Shop »)**. Le back-end NestJS est entièrement décorrélé du secteur des piscines (il manipule abstraitement des catalogues, offres, jauges, créneaux et commandes pour vendre « tout et n'importe quoi »). C'est le **front-end Nuxt 4 (« Aqua Mulhouse »)** qui prend en charge la **traduction métier (Domain Translation Layer)** en mappant ces entités génériques en vocabulaire municipal concret (*piscines, bassins, activités/cours, abonnements, entrées*).
-- **Intégration d'infrastructure :** L'intégration du Front-Office et du Back-Office de *Shop* au sein de *Mon Guichet* est réalisée de façon transparente pour Mulhouse via un reverse proxy **Nginx**, tout en délivrant une refonte UI/UX majeure grâce à la nouvelle stack.
+- **Déclencheur client :** La Ville de Mulhouse a mandaté et financé Logitud pour refondre complètement cette partie aquatique tout en s'interfaçant avec _Mon Guichet_.
+- **Vision Produit & Stratégie Logitud :** Plutôt que de coder un patch spécifique jetable, Logitud a capitalisé sur ce financement pour concevoir un véritable **moteur e-commerce 100% générique et agnostique (« Shop »)**. Le back-end NestJS est entièrement décorrélé du secteur des piscines (il manipule abstraitement des catalogues, offres, jauges, créneaux et commandes pour vendre « tout et n'importe quoi »). C'est le **front-end Nuxt 4 (« Aqua Mulhouse »)** qui prend en charge la **traduction métier (Domain Translation Layer)** en mappant ces entités génériques en vocabulaire municipal concret (_piscines, bassins, activités/cours, abonnements, entrées_).
+- **Intégration d'infrastructure :** L'intégration du Front-Office et du Back-Office de _Shop_ au sein de _Mon Guichet_ est réalisée de façon transparente pour Mulhouse via un reverse proxy **Nginx**, tout en délivrant une refonte UI/UX majeure grâce à la nouvelle stack.
 
 ---
 
@@ -64,10 +64,10 @@ Ce document synthétise l'ensemble des informations du projet présenté pour l'
 - **Communication interne :** Slack pour les échanges quotidiens, synchrones et asynchrones, réunions d'équipe et visios.
 - **Livraisons & Releases :** À chaque version déployée, publication systématique d'un **Changelog GitHub** technique et de **Notes de version** sur Linear (tenues à jour pour chaque jalon).
 - **Relation & Cycle de Validation Client (Mulhouse / m2A) :**
-  1. *Début de sprint :* Re-consultation de la cliente en visio/mail pour cadrer et valider les fonctionnalités prioritaires à développer.
-  2. *Fin de développement / Sprint Review :* Présentation d'une démo en direct.
-  3. *Phase de test utilisateur :* La cliente teste la version avec son équipe municipale sur l'environnement de préproduction.
-  4. *Boucle de feedback :* Les retours sont analysés (si faisables, imputables à l'équipe (« de notre faute ») et compatibles avec les délais restants) ➔ correctif ➔ re-test ➔ déploiement en production (`e-services.mulhouse-alsace.fr`).
+  1. _Début de sprint :_ Re-consultation de la cliente en visio/mail pour cadrer et valider les fonctionnalités prioritaires à développer.
+  2. _Fin de développement / Sprint Review :_ Présentation d'une démo en direct.
+  3. _Phase de test utilisateur :_ La cliente teste la version avec son équipe municipale sur l'environnement de préproduction.
+  4. _Boucle de feedback :_ Les retours sont analysés (si faisables, imputables à l'équipe (« de notre faute ») et compatibles avec les délais restants) ➔ correctif ➔ re-test ➔ déploiement en production (`e-services.mulhouse-alsace.fr`).
 
 ---
 
@@ -89,22 +89,22 @@ Ce document synthétise l'ensemble des informations du projet présenté pour l'
 ## 7. Historique Réel des Versions & Jalons (Linear)
 
 - **19 juin 2026 — v1.0.0 (Lancement officiel / Go-Live initial) :**
-  - *Backoffice :* Création et gestion du catalogue, offres, tarifs, jauges et plannings ; gestion des avoirs ; intégration du paiement d'État [PayFIP](https://www.payfip.gouv.fr/) ; gestion des demandes d'abonnements ; réservation « En tant que » ; export CSV complet ; stockage S3.
-  - *Boutique usager (FO) :* Catalogue réinscriptions, panier avec verrou de 30 minutes, calcul d'éligibilité par âge (mois/années), synchronisation *Mon Guichet*.
-  - *Infrastructure :* Déploiement en production sur `e-services.mulhouse-alsace.fr` (m2A).
+  - _Backoffice :_ Création et gestion du catalogue, offres, tarifs, jauges et plannings ; gestion des avoirs ; intégration du paiement d'État [PayFIP](https://www.payfip.gouv.fr/) ; gestion des demandes d'abonnements ; réservation « En tant que » ; export CSV complet ; stockage S3.
+  - _Boutique usager (FO) :_ Catalogue réinscriptions, panier avec verrou de 30 minutes, calcul d'éligibilité par âge (mois/années), synchronisation _Mon Guichet_.
+  - _Infrastructure :_ Déploiement en production sur `e-services.mulhouse-alsace.fr` (m2A).
 - **Fin juin à mi-juillet 2026 — v1.0.1 à v1.0.17 (Stabilisation & Interopérabilité) :**
-  - Correctifs ciblés : réconciliation PayFIP, webhooks panier, gestion des remboursements/créneaux, synchronisation profils *Mon Guichet*.
+  - Correctifs ciblés : réconciliation PayFIP, webhooks panier, gestion des remboursements/créneaux, synchronisation profils _Mon Guichet_.
 - **30 juillet 2026 — v1.1.0A (Module Charge & Présence) :**
   - Visualisation de la charge des activités et taux de remplissage par jauge.
   - Génération automatique des feuilles de présence pour les maîtres-nageurs / agents.
 - **11 août 2026 — v1.2.0 (Gestion financière avancée) :**
   - Ajustements de prix post-achat (hausses avec complément, baisses avec avoirs), génération de justificatifs PDF.
 - **17 août 2026 — v1.3.0 (Vente des Entrées en Piscine) :**
-  - *FO :* Ouverture de la vente des « Entrées en piscine » (billetterie unitaire / créneaux horaires).
-  - *BO :* Calendrier des jauges par piscine, tableau des commandes et vérification des entrées au guichet.
+  - _FO :_ Ouverture de la vente des « Entrées en piscine » (billetterie unitaire / créneaux horaires).
+  - _BO :_ Calendrier des jauges par piscine, tableau des commandes et vérification des entrées au guichet.
 - **02 septembre 2026 — v1.4.0 (Personnalisation & Analytics) :**
-  - *BO :* Configuration dynamique de l'ordre des étapes du tunnel d'achat usager ; nouveau tableau de bord avec indicateurs comptables et graphique d'évolution temporelle des transactions ; uniformisation des exports CSV.
-  - *FO :* Questionnaire guidé d'auto-évaluation du niveau de natation pour orienter le choix de cours.
+  - _BO :_ Configuration dynamique de l'ordre des étapes du tunnel d'achat usager ; nouveau tableau de bord avec indicateurs comptables et graphique d'évolution temporelle des transactions ; uniformisation des exports CSV.
+  - _FO :_ Questionnaire guidé d'auto-évaluation du niveau de natation pour orienter le choix de cours.
 
 ---
 
@@ -112,24 +112,24 @@ Ce document synthétise l'ensemble des informations du projet présenté pour l'
 
 - **Problématique :** Implémentation d'une surcouche sur le composant DataTable de NuxtUI par Nicolas.
 - **Désaccord initial :**
-  - *Vision Nicolas (axée UX) :* Prioriser le tri, le filtrage et la recherche côté client avec pré-chargement global des données de l'API. TanStack Table gère cela avec une fluidité absolue, sans spinner de chargement à chaque saisie ou changement de page.
-  - *Vision équipe initiale (classique) :* Dogme traditionnel « full-backend » (pagination, filtres et tris gérés exclusivement par des appels API successifs).
+  - _Vision Nicolas (axée UX) :_ Prioriser le tri, le filtrage et la recherche côté client avec pré-chargement global des données de l'API. TanStack Table gère cela avec une fluidité absolue, sans spinner de chargement à chaque saisie ou changement de page.
+  - _Vision équipe initiale (classique) :_ Dogme traditionnel « full-backend » (pagination, filtres et tris gérés exclusivement par des appels API successifs).
 - **Démarche d'arbitrage :**
   1. Réalisation d'un **POC** (Proof of Concept) par Nicolas pour démontrer la réactivité de l'interface et la viabilité technique.
   2. Présentation du POC à l'équipe et recueil de retours très positifs.
   3. Décision d'un **compromis pragmatique :** conception d'un composant **DataTable bi-mode** (mode client privilégié quand la volumétrie API est raisonnable, bascule automatique en mode serveur sur les très gros jeux de données).
-- **Bénéfice fonctionnel immédiat :** L'export CSV est généré directement depuis les données chargées en mémoire front-end, permettant d'offrir à l'utilisateur le choix instantané entre exporter la *page courante* ou la *totalité du tableau*, sans solliciter un endpoint serveur dédié.
+- **Bénéfice fonctionnel immédiat :** L'export CSV est généré directement depuis les données chargées en mémoire front-end, permettant d'offrir à l'utilisateur le choix instantané entre exporter la _page courante_ ou la _totalité du tableau_, sans solliciter un endpoint serveur dédié.
 
 ---
 
 ## 9. Management d'Équipe & Dynamique Humaine (Compétences C3.3.1 & C3.3.2)
 
 - **Styles managériaux appliqués :** Management situationnel (Hersey & Blanchard) :
-  - Style *participatif* et *délégatif* lors des phases de conception et de développement avec l'équipe technique et l'UX.
-  - Style *directif / persuasif* pour respecter les impératifs stricts de coûts et délais fixés par la Direction.
+  - Style _participatif_ et _délégatif_ lors des phases de conception et de développement avec l'équipe technique et l'UX.
+  - Style _directif / persuasif_ pour respecter les impératifs stricts de coûts et délais fixés par la Direction.
 - **Motivation & Implication :**
-  - *Sprint Planning :* Affectation des tâches selon les compétences mais aussi les appétences (« qui kiffait quoi »).
-  - *Sprint Review :* Rituel de valorisation et de félicitation mutuelle, partage transparent des ressentis et des points de vue.
+  - _Sprint Planning :_ Affectation des tâches selon les compétences mais aussi les appétences (« qui kiffait quoi »).
+  - _Sprint Review :_ Rituel de valorisation et de félicitation mutuelle, partage transparent des ressentis et des points de vue.
 - **Gestion des conflits :** Débats techniques ouverts encouragés. En cas de désaccord persistant, décision finale tranchée par le Lead Tech Front et le Chef de Projet. Posture d'équipe mature et professionnelle (« adultes payés pour avancer ensemble »).
 - **Plan de développement des compétences :**
   - Pour les technologies maîtrisées : entraide directe et binômage / peer programming.

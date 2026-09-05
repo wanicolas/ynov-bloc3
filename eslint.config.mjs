@@ -8,12 +8,12 @@ export default antfu({
 		indent: "tab",
 		quotes: "double",
 	},
+	formatters: {
+		css: true,
+	},
 	ignores: [
-		"dist/**",
-		"node_modules/**",
 		"slides.md",
-		"pages/**/*.md",
-		"consignes/**",
+		"pages/**",
 		"pnpm-workspace.yaml",
 	],
 })

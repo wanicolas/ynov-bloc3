@@ -1,5 +1,4 @@
-pnpm-lock.yaml
-.agents
-dist
-node_modules
-consignes
+*
+!slides.md
+!pages
+!pages/**

@@ -7,7 +7,7 @@ Ce document définit les règles métier, les choix d'architecture et les contra
 ## 🎯 Contexte Métier & Évaluation (RNCP Bloc 3)
 
 - **Certification :** Expert en Développement Logiciel (RNCP 39583 — Niveau 7 / Master 2 Ynov Campus Strasbourg).
-- **Bloc 3 :** *« Coordonner et piloter un projet de développement d’applications logicielles »*.
+- **Bloc 3 :** _« Coordonner et piloter un projet de développement d’applications logicielles »_.
 - **Attentes du jury :** Le jury n'évalue pas seulement la technique pure, mais la posture de **coordinateur / lead technique** :
   - Cadrage du besoin et cartographie des parties prenantes.
   - Arbitrages techniques argumentés (coûts, délais, dette technique, risques).
@@ -45,4 +45,3 @@ pnpm run lint         # Linter ESLint
 pnpm run format:check # Formatage Prettier
 pnpm run build        # Compilation Slidev / Vite
 ```
-

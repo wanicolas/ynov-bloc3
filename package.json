@@ -23,6 +23,7 @@
 		"@unocss/eslint-plugin": "~66.9.2",
 		"@unocss/preset-wind4": "~66.9.2",
 		"eslint": "~10.9.1",
+		"eslint-plugin-format": "~2.0.1",
 		"prettier": "~3.9.6",
 		"prettier-plugin-slidev": "~1.0.5",
 		"typescript": "~5.9.3",
