@@ -37,16 +37,16 @@ layout: default
 
 # Gouvernance & Matrice RACI (C3.1)
 
-| Rôle dans le projet           | Acteur(s)            | Missions principales                                              |   RACI    |
-| :---------------------------- | :------------------- | :---------------------------------------------------------------- | :-------: |
-| **Direction Logitud**         | Direction générale   | Arbitrage des budgets globaux et des échéances contractuelles     |   **A**   |
-| **Lead Tech Front & CP**      | 1 Dev / CP           | Pilotage du backlog, arbitrages techniques finaux et coordination | **A / R** |
-| **UI/UX Designer**            | 1 Designer           | Conception des parcours usagers et agents, validation ergonomique |   **R**   |
-| **Référent Qualité / A11y**   | **Nicolas Walter**   | **Front Usager complet, outillage CI/CD, A11y, piliers BO**       |   **R**   |
-| **Équipe Dév Front**          | 4 Développeurs       | Développement des fonctionnalités Back-Office et intégration      |   **R**   |
-| **Équipe Dév Back**           | 2 Développeurs       | Architecture APIs NestJS, logique Core Shop et plugins métiers    |   **R**   |
-| **Équipe DevOps**             | Équipe partagée      | Infrastructure serveurs, runners CI/CD et reverse-proxy Nginx     |   **C**   |
-| **Cliente Ville de Mulhouse** | Responsable piscines | Expression des besoins, recettes utilisateurs et retours d'usage  | **C / I** |
+| Rôle dans le projet           | Acteur(s)            | Missions principales                                                |   RACI    |
+| :---------------------------- | :------------------- | :------------------------------------------------------------------ | :-------: |
+| **Direction Logitud**         | Direction générale   | Arbitrage des budgets globaux et des échéances contractuelles       |   **A**   |
+| **Lead Tech Front & CP**      | 1 Dev / CP           | Pilotage du backlog, arbitrages techniques finaux et coordination   | **A / R** |
+| **UI/UX Designer**            | 1 Designer           | Conception des parcours usagers et agents, validation ergonomique   |   **R**   |
+| **Référent Qualité / A11y**   | **Nicolas Walter**   | **Front Usager complet, outillage CI/CD, A11y, piliers BO**         |   **R**   |
+| **Équipe Dév Front**          | 4 Développeurs       | Développement des fonctionnalités Back-Office et intégration        |   **R**   |
+| **Équipe Dév Back**           | 2 Développeurs       | Architecture APIs NestJS, moteur e-commerce générique et agnostique |   **R**   |
+| **Équipe DevOps**             | Équipe partagée      | Infrastructure serveurs, runners CI/CD et reverse-proxy Nginx       |   **C**   |
+| **Cliente Ville de Mulhouse** | Responsable piscines | Expression des besoins, recettes utilisateurs et retours d'usage    | **C / I** |
 
 <!--
 [Slide] "Voici la cartographie des rôles et notre matrice RACI sur ce projet."

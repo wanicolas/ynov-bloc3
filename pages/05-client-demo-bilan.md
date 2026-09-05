@@ -64,7 +64,7 @@ layout: default
 
 <v-clicks>
 
-- **Adhésion opérationnelle des agents :** Gains d'ergonomie majeurs au guichet sur la réservation « En tant que » et la consultation des jauges par rapport à l'ancien plugin.
+- **Adhésion opérationnelle des agents :** Gains d'ergonomie majeurs au guichet sur la réservation « En tant que » et la consultation des jauges par rapport à l'ancien module historique.
 
 </v-clicks>
 

@@ -19,7 +19,7 @@ Ce document synthétise l'ensemble des informations du projet présenté pour l'
 - **Écosystème existant :** *Mon Guichet*, progiciel de GRU (Gestion de la Relation Usager) déjà utilisé par de nombreuses collectivités, dont la Ville de Mulhouse.
 - **Dette technique & problème initial :** Mulhouse utilisait depuis plusieurs années un module / plugin historique dédié à leurs piscines (« aqua shop »). Ce module était ancien, très limité fonctionnellement et devenu inmaintenable au fil du temps.
 - **Déclencheur client :** La Ville de Mulhouse a mandaté et financé Logitud pour refondre complètement cette partie aquatique tout en s'interfaçant avec *Mon Guichet*.
-- **Vision Produit & Stratégie Logitud :** Plutôt que de coder un patch spécifique jetable, Logitud a capitalisé sur ce financement pour concevoir un véritable **moteur e-commerce générique et réutilisable (« Shop »)**, sur lequel s'ajoute une stratégie de vente / plugin métier spécifique nommé **« Aqua Mulhouse »**.
+- **Vision Produit & Stratégie Logitud :** Plutôt que de coder un patch spécifique jetable, Logitud a capitalisé sur ce financement pour concevoir un véritable **moteur e-commerce 100% générique et agnostique (« Shop »)**. Le back-end NestJS est entièrement décorrélé du secteur des piscines (il manipule abstraitement des catalogues, offres, jauges, créneaux et commandes pour vendre « tout et n'importe quoi »). C'est le **front-end Nuxt 4 (« Aqua Mulhouse »)** qui prend en charge la **traduction métier (Domain Translation Layer)** en mappant ces entités génériques en vocabulaire municipal concret (*piscines, bassins, activités/cours, abonnements, entrées*).
 - **Intégration d'infrastructure :** L'intégration du Front-Office et du Back-Office de *Shop* au sein de *Mon Guichet* est réalisée de façon transparente pour Mulhouse via un reverse proxy **Nginx**, tout en délivrant une refonte UI/UX majeure grâce à la nouvelle stack.
 
 ---
@@ -27,15 +27,15 @@ Ce document synthétise l'ensemble des informations du projet présenté pour l'
 ## 3. Stack Technique & Rôle de Nicolas Walter
 
 - **Stack :**
-  - **Backend :** NestJS (TypeScript, architecture modulaire en plugins).
-  - **Frontend :** Nuxt 4 (TypeScript, Pinia, NuxtUI, Tailwind).
+  - **Backend :** NestJS (TypeScript, API REST e-commerce 100% agnostique et générique, modules NestJS : catalogue, panier, commandes, paiements PayFIP, jauges).
+  - **Frontend :** Nuxt 4 (TypeScript, Pinia, NuxtUI, Tailwind, TanStack Table) — assure le rôle d'adaptateur / traduction métier.
   - **Tooling Qualité :** ESLint, TypeScript strict, Prettier, Vitest, GitHub Actions CI.
 - **Rôle et responsabilités de Nicolas :**
   - Développeur Frontend au quotidien.
   - Référent Accessibilité Numérique (a11y) et Bonnes Pratiques de développement.
   - Mise en place intégrale du tooling qualité et de la chaîne CI (ESLint, TS, Prettier, Vitest).
-  - Concepteur et développeur de composants piliers dans le Back-Office Agent (notamment la surcouche de DataTable).
-  - Concepteur et créateur de l'intégralité du Front Usager (« Aqua Mulhouse »).
+  - Concepteur et développeur de composants piliers dans le Back-Office Agent (notamment la surcouche de DataTable bi-mode).
+  - Concepteur et créateur de l'intégralité du Front Usager (« Aqua Mulhouse ») et de l'adaptation du modèle de données au domaine aquatique.
   - Posture de lead technique front / coordinateur qualité.
 
 ---

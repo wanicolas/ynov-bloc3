@@ -41,25 +41,28 @@ layout: default
 layout: default
 ---
 
-# Annexe 2 : Architecture Modulaire Core / Plugin
+# Annexe 2 : Architecture Headless & Traduction Métier
 
 <v-clicks>
 
-- **Découplage strict entre Moteur Core et Stratégie Métier :**
-  - **Shop Core (NestJS) :** Modules génériques d'entités (`CatalogModule`, `CartModule`, `OrderModule`, `PaymentModule`).
-  - **Aqua Mulhouse Plugin :** Implémentation de la stratégie de vente aquatique (`PoolStrategy`, `PassRegistry`, `AttendanceModule`).
-- **Architecture Front-End (Nuxt 4) :**
-  - Utilisation des Nuxt Layers pour partager les composants socles du Back-Office.
-  - Séparation nette entre le Back-Office Agent (interfacé Mon Guichet) et le Front-Office Usager grand public.
+- **Back-end NestJS 100% Agnostique :**
+  - Moteur e-commerce modulaire (`CatalogModule`, `CartModule`, `OrderModule`, `PaymentModule`).
+  - Manipulation exclusive d'entités abstraites : articles, créneaux horaires, jauges de capacité, paiements PayFIP.
+  - Zéro couplage avec le domaine aquatique : moteur universel prêt pour tout autre besoin de collectivité.
+- **Front-end Nuxt 4 : Couche d'Adaptation & Traduction Métier :**
+  - Pattern Adaptateur : mapping direct des articles génériques en _bassins_, _cours de natation_ et _abonnements_.
+  - Architecture en Nuxt Layers pour mutualiser le socle UI du Back-Office Agent tout en isolant le Front-Office Usager.
 
 </v-clicks>
 
 <!--
-[Slide] "Détail de l'architecture découplée entre le cœur Shop et le plugin Aqua Mulhouse."
+[Slide] "Détail de notre architecture découplée entre le back-end agnostique et le front-end traducteur de domaine."
 
-- "Côté NestJS : modules d'entités abstraits réutilisables, surchargeables par injection de dépendances."
+- "Côté NestJS : un moteur e-commerce REST headless purement transactionnel. Il manipule des stocks, des jauges et des paniers sans aucune connaissance du domaine des piscines."
 
-- "Côté Nuxt 4 : architecture en Nuxt Layers pour mutualiser le socle UI du Back-Office tout en isolant le Front Usager."
+- "Côté Nuxt 4 : le front agit comme couche de traduction de domaine (Adapter pattern). C'est lui qui transforme ces entités abstraites en expérience usager aquatique concrète."
+
+- "Nuxt Layers : mutualisation efficace du socle UI commun et des composants complexes (comme le DataTable) entre le Back-Office Agent et le Front Usager."
 -->
 
 ---
